@@ -1,0 +1,27 @@
+@media (min-width: 1600px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1499px;
+    }
+}
+@media only screen and (max-width: 968px) {
+    .navbar-brand{
+        padding-left: 20px;
+    }
+    .input-group .crystall{
+        width: 180px;
+    }
+     
+  }
+  @media only screen and (max-width: 1600px) {
+    .section-6 h4{
+        font-size: 1.5rem;
+       }
+       .section-6 .content-card{
+        /* aspect-ratio: 1/1; */
+        object-fit: contain;
+        object-position: center;
+        height: 350px;
+
+       }
+   
+  }

@@ -1,0 +1,432 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    padding: 0.5rem 1rem;
+   
+}
+
+.navbar-brand{
+    padding-left: 200px;
+}
+
+.nav-link {
+    font-size: 0.9rem;
+    margin-right: 15px;
+    color: #555;
+}
+
+.nav-link img {
+    margin-left: 5px;
+}
+
+.input-group .btn-warning {
+    color: white;
+}
+
+
+
+.form-control {
+    border: 0;
+  
+}
+.btn-warning{
+    border-radius: 50px 50px;
+    width: 120px;
+   margin: 1px;
+   background-color: rgb(253, 124, 17);
+
+}
+.input-group{
+    border: 1px solid black;
+    max-width: 600px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50px 50px;
+   /* padding-left: 20px; */
+}
+.sognup{
+    color: #fff;
+    background-color: rgb(253, 124, 17);
+    width: 120px;
+}
+
+.navbar .collapse{
+    padding-left: 150px;
+
+}
+.products{
+    max-width: 150px;
+    margin-left: 20px;
+    border-right:  1px  solid black;
+    border-left: none;
+    border-bottom: none;
+    border-top: none;
+ 
+
+    
+}
+/* section1 */
+
+.section1 {
+    background-image: url("https://i.ibb.co/4YknNMB/section1-img.jpg");
+    background-size: cover;
+    height: 600px;
+    color: #fff;
+    
+}
+.leding-platform{
+    padding-top: 200px;
+    max-width: 800px;
+}
+.input-group .crystall{
+    border: none;
+    width: 410px;
+}
+ /* section2 */
+ .section2{
+  background-color: #3b2b1a;
+      color: white;    
+ }
+ .card1{
+    background-color: #4d3926;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 19px;
+ }
+ /* section3 */
+ .main-text {
+    font-size: 2rem;
+    /* font-weight: bold; */
+    font-weight: 600;
+  }
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 40px;
+  }
+  .stat-item {
+    padding-left: 20px;
+    border-left: 2px solid #e6e6e6;
+    margin-bottom: 20px;
+  }
+  .number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6600;
+  }
+  .label {
+    font-size: 0.9rem;
+    color: #666666;
+  }
+
+  /* careousel */
+  .icon-box {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 20px;
+    
+  }
+  .icon-box i img {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 40px;
+    margin-left: 10px;
+  }
+  .icon-text {
+    text-align: center;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .line {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+   
+    .item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .icon-box {
+        margin-bottom: 10px; /* Add spacing between the icon and text */
+      }
+      
+.owl-nav button {
+    
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+    width: 60px; /* Increase the button size */
+    height: 60px; /* Increase the button size */
+    font-size: 24px; /* Increase font size */
+    
+   
+}
+.owl-nav button:focus {
+    outline: none; /* Remove focus outline */
+}
+.section4{
+    background-color: #e1dbdb;
+    background-size: cover;
+}
+.section4 a{
+  margin-left: auto;
+
+}
+.section4 .card-body1 {
+  padding: .75rem 1.25rem;
+  background-color: rgb(197, 233, 233);
+  margin: 0 1.25rem;
+  border-radius: 5px;
+}
+.section4 .card-body1 p{
+  width: 55%;
+  padding: 0 5px;
+}
+.second-carousel .item {
+  background-color: rgb(197, 233, 233);
+  margin: 0  1.25rem ;
+  border-radius: 8px;
+  
+
+
+
+}
+/* Position the dots at the bottom */
+ .second-carousel .owl-dots {
+  position: absolute;
+  bottom: 10px; /* Adjust this value as needed */
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10; /* Ensure it's above carousel items */
+  margin: 0 auto; /* Center the dots */
+}
+
+/* Style for individual dots */
+.owl-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* Dot appearance */
+.owl-carousel .owl-dot span {
+  width: 10px;
+  height: 10px;
+  background: #ddd;
+  border-radius: 50%;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+/* Active dot appearance */
+.owl-carousel .owl-dot.active span {
+  background: #333; /* Active dot color */
+}
+
+/* Keep the navigation buttons as is */
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 20; /* Ensure navigation is above carousel items */
+}
+
+.owl-carousel .owl-prev, 
+.owl-carousel .owl-next {
+  display: none !important;
+}
+.section4 .iphone{
+  background-color: #ddd;
+  border-radius: 8px;
+  /* margin: 20px; */
+  max-width: 200px;
+  height: 200px;
+  text-align: center;
+  justify-content: center;
+  align-items: center; 
+  position: relative;
+  aspect-ratio: 1/1;
+ 
+  object-fit: contain;
+  object-position: center;
+  max-width: 100%;
+  height: 100%;
+
+}
+.section4 .iphone img {
+  aspect-ratio: 1/1;
+ 
+  object-fit: contain;
+  object-position: center;
+  max-width: 100%;
+  height: 100%;
+}
+.section4 .col3{
+  border-radius: 8px;
+}
+.section5 .card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  margin: 20px auto;
+}
+.section5 .card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.section5 .card h5 {
+  position: absolute;
+ 
+  z-index: 2;
+  padding: 20px;
+  border-radius: 5px;
+}
+.section5 .card a {
+  position: absolute;
+ 
+  z-index: 2;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 330px;
+  color: white;
+  transition: 0.3s;
+}
+.section5 .card a :hover{
+ background-color: black;
+  text-decoration: underline;
+}
+.section-6{
+  background-image: url(./section-6.jpg);
+  background-size: cover;
+  color: white;
+}
+.section-6 .content-card {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  border-radius: 15px;
+  padding: 30px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  /* aspect-ratio: 1/1;
+  object-fit: contain;
+  object-position: center; */
+  /* Optional border for card clarity */
+}
+ 
+
+.section-6  .content-card h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.section-6   .content-card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.section-6 
+.btn-custom {
+  border: 1px solid white;
+  color: white;
+  background: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+.section-6 .btn-custom:hover {
+  background: white;
+  color: black;
+}
+/* .section-6  .row .content-card {
+  margin: 0px;
+} */
+ .section-6 h4{
+  font-size: 3.0rem;
+ }
+.section-7 .icon-boxs{
+  width: 60px;
+  height: 60px;
+  border-radius: 50px 50px;
+  background-color: rgb(230, 168, 127);
+  align-items: start;
+  position: absolute;
+  display: flex;
+}
+.section-7 .icon-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.section-7 .icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px ;
+  background-color: #e0d7d0;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+.section-7.icon-texts h5 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.section-7.icon-texts{
+  text-align: center;
+}
+.section-7 .search{
+  color: rgb(110, 5, 5);
+  font-size: 34px;
+
+}
+.section8 h5{
+  padding: 20px;
+  color: rgb(110, 5, 5);
+  font-size: 34px;
+  padding-top: 30px;
+  padding: 0px 70px;
+}
+.section8 {
+  background-color: #ddd;
+}
+.section8 p{
+  padding: 20px;
+ 
+
+}
+.section8 .section-img{
+  width: 80%;
+  height: 80%;
+  border-radius: 50px 50px;
+}
+
