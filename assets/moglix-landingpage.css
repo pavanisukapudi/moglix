@@ -521,6 +521,7 @@ body{
   /* margin-bottom: auto; */
  height: 600px;
  position: relative;
+ margin-bottom: 30px;
 }
 .section10 .contect-text {
   position: absolute;
@@ -540,10 +541,11 @@ body{
   border-radius: 20px;
   position: relative;
   text-align: start;
-  height: 250px;
-  height: calc(250px - 15px);
-  margin-bottom: 15px; 
-  margin-left: 20px;
+  height: 350px;
+  height: calc(350px - 30px);
+  margin-bottom: 30px; 
+  margin-left: 30px;
+  width: 100%;
 }
 .section10 .bg-image3{
   background-image: url(./bg-3.jpg);
@@ -551,9 +553,78 @@ body{
   border-radius: 20px;
   position: relative;
   text-align: start;
-  margin-left: 20px;
+  margin-left: 30px;
 
-  height: 350px;
+  height: 250px;
 
 
+}
+.section10 .contect-texts {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  left: 20px; /* Distance from the left */
+  padding: 10px 20px; /* Padding around the text */
+}
+.section10 .contect-texts h5 {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 15px;
+ 
+}
+.section10 .contect-texts h2{
+  color: maroon;
+}
+.section10 .contect-texts2 {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  left: 20px; /* Distance from the left */
+  padding: 10px 20px; /* Padding around the text */
+}
+.section10 .contect-texts2 h5 {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 15px;
+ 
+}
+.section10 .contect-texts2 h2{
+  color: #fff;
+}
+.section10 a{
+  margin-left: auto;
+  color: black;
+  font-size: 30px;
+  text-decoration: underline;
+  
+} 
+.section10 .japan{
+  text-align: center;
+  justify-content: center;
+  margin: 70px;
+}
+.section10 .flags-containerimg{
+  width: 20px;
+  
+}
+.footer-section {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+}
+.footer-section h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.footer-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer-section ul li {
+  margin-bottom: 10px;
+  color: black;
+}
+.footer-section ul li a {
+  color: black;
+}
+.payment-icons img {
+  height: 40px;
+ 
 }
