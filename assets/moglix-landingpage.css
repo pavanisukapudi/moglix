@@ -1,6 +1,9 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .navbar {
     padding: 0.5rem 1rem;
@@ -180,10 +183,10 @@ body{
     font-size: 24px; /* Increase font size */
     
    
-}
+/* }
 .owl-nav button:focus {
     outline: none; /* Remove focus outline */
-}
+} */
 .section4{
     background-color: #e1dbdb;
     background-size: cover;
@@ -253,8 +256,8 @@ body{
   z-index: 20; /* Ensure navigation is above carousel items */
 }
 
-.owl-carousel .owl-prev, 
-.owl-carousel .owl-next {
+.second-carousel.owl-prev, 
+.second-carousel .owl-next {
   display: none !important;
 }
 .section4 .iphone{
@@ -415,18 +418,136 @@ body{
   font-size: 34px;
   padding-top: 30px;
   padding: 0px 70px;
+  text-align: center;
+}
+.section8 .content {
+  padding: 20px;
+  padding-top: 30px;
+  padding: 0px 70px;
+  text-align: center;
+}
+
+.section8 a{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 .section8 {
   background-color: #ddd;
 }
-.section8 p{
-  padding: 20px;
- 
+
+
+.section8 .owl-carousel .owl-item img {
+  display: block;
+  max-width: 150px;
+  padding-left: 50px;
 
 }
-.section8 .section-img{
-  width: 80%;
-  height: 80%;
+.section8 .iamge-owles{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+
+}
+.third-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.third-carousel .owl-nav .owl-prev,
+.owl-nav .owl-next {
+  background: #ffffff;
+  /* border-radius: 50%; */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: all;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.third-carousel .owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+  background: #f7f7f7;
+}
+
+.third-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: -50px; /* Adjust based on layout */
+  top: -30px;
+}
+
+.third-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: -50px; /* Adjust based on layout */
+  top: -30px;
+}
+.section8 .pera{
+  padding-right: 120px;
+}
+.section-9{
+  background-image: url(./section9-bg.jpg);
+  color: #fff;
+  background-size: cover;
+}
+.section-9 .btn{
   border-radius: 50px 50px;
+  background-color: orange;
+  text-align: center;
+  color: #fff;
 }
+.section10 .heading{
+  color: maroon;
+  font-size: 50px;
+  font-weight: bold;
 
+}
+.section10 .content{
+  padding: 0px 50px;
+}
+.section10 .background-image{
+  background-image: url(./group-image.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  text-align: start;
+  /* margin-bottom: auto; */
+ height: 600px;
+ position: relative;
+}
+.section10 .contect-text {
+  position: absolute;
+  bottom: 20px; /* Distance from the bottom */
+  left: 20px; /* Distance from the left */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding around the text */
+}
+.section10 .contect-text h5{
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 15px;
+}
+.section10 .bg-image2{
+  background-image: url(./map.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+  margin: 20px ;
+  text-align: start;
+}
+.section10 .bg-image3{
+  background-image: url(./bg-3.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+  text-align: start;
+
+
+}
