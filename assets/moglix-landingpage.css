@@ -539,8 +539,11 @@ body{
   background-size: cover;
   border-radius: 20px;
   position: relative;
-  margin: 20px ;
   text-align: start;
+  height: 250px;
+  height: calc(250px - 15px);
+  margin-bottom: 15px; 
+  margin-left: 20px;
 }
 .section10 .bg-image3{
   background-image: url(./bg-3.jpg);
@@ -548,6 +551,9 @@ body{
   border-radius: 20px;
   position: relative;
   text-align: start;
+  margin-left: 20px;
+
+  height: 350px;
 
 
 }
