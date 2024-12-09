@@ -3,132 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Owl Carousel Testimonials</title>
-
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+  <title>Single Row Flags</title>
+  <!-- Bootstrap 4 CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .testimonial-item {
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .flags-row {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      overflow-x: auto; /* Enables horizontal scroll on smaller screens */
       padding: 20px;
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: #f8f9fa;
     }
-
-    .testimonial-text {
-      font-style: italic;
-      color: #555;
+    .flag-container {
+      text-align: center;
+      margin: 10px;
     }
-
-    .owl-carousel .owl-nav button.owl-prev,
-    .owl-carousel .owl-nav button.owl-next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: none;
-      border: none;
-      font-size: 40px;
-      color: #333;
+    .flag {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-
-    .owl-carousel .owl-nav button.owl-prev {
-      left: 30px;
+    .flag img {
+      width: 60%;
     }
-
-    .owl-carousel .owl-nav button.owl-next {
-      right: 30px;
+    .country-name {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 500;
     }
-    .owl-carousel .owl-nav button.owl-prev,
-    .owl-carousel .owl-nav button.owl-next :hover{
-      background-color: none;
-    }
-    .owl-theme .owl-nav [class*=owl-]:hover {
-      background: none;
-      color: black;
-      border: none;
-      border: solid1px green;
+    @media (max-width: 768px) {
+      .flag {
+        width: 80px;
+        height: 80px;
+      }
+      .country-name {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 <body>
-
-<div class="container mt-5">
-  <div class="owl-carousel owl-theme">
-    <!-- Testimonial Item 1 -->
-    <div class="testimonial-item text-center">
-      <img src="https://via.placeholder.com/100" alt="Eva Jane" class="rounded-circle mx-auto" style="width: 100px; height: 100px; object-fit: cover;">
-      <h5 class="mt-3">Eva Jane</h5>
-      <p class="text-muted">Founder of Eva Jane Beauty</p>
-      <p class="testimonial-text">
-        “As an entrepreneur who is deeply involved in the Beauty industry, I have been very devoted to creating my original products. [Partner Name] has been my trusted partner in this process.”
-      </p>
+  <div class="flags-row">
+    <!-- Japan -->
+    <div class="flag-container">
+      <div class="flag">
+        <img src="https://flagcdn.com/w320/jp.png" alt="Japan Flag">
+      </div>
+      <div class="country-name">Japan</div>
     </div>
-
-    <!-- Testimonial Item 2 -->
-    <div class="testimonial-item text-center">
-      <img src="https://via.placeholder.com/100" alt="John Doe" class="rounded-circle mx-auto" style="width: 100px; height: 100px; object-fit: cover;">
-      <h5 class="mt-3">John Doe</h5>
-      <p class="text-muted">CEO of Doe Enterprises</p>
-      <p class="testimonial-text">
-        “Working with this team has been a game changer for our business. Their expertise and dedication are unmatched!”
-      </p>
+    <!-- Italy -->
+    <div class="flag-container">
+      <div class="flag">
+        <img src="https://flagcdn.com/w320/it.png" alt="Italy Flag">
+      </div>
+      <div class="country-name">Italy</div>
     </div>
-
-    <!-- Testimonial Item 3 -->
-    <div class="testimonial-item text-center">
-      <div class="row">
-        <div class="col-md-6">
-      <img src="https://via.placeholder.com/100" alt="Jane Smith" class="rounded-circle mx-auto" style="width: 100px; height: 100px; object-fit: cover;">
-      <h5 class="mt-3">Jane Smith</h5>
- 
-      <p class="text-muted">Creative Director at Smith Design</p>
+    <!-- Turkey -->
+    <div class="flag-container">
+      <div class="flag">
+        <img src="https://flagcdn.com/w320/tr.png" alt="Turkey Flag">
+      </div>
+      <div class="country-name">Türkiye</div>
     </div>
-    <div class="col-md-6 justify-content-center align-items-center">
-
-      <p class="testimonial-text">
-        “Their creativity and innovative ideas have taken our projects to new heights. Highly recommend working with them!”
-      </p>
+    <!-- Malaysia -->
+    <div class="flag-container">
+      <div class="flag">
+        <img src="https://flagcdn.com/w320/my.png" alt="Malaysia Flag">
+      </div>
+      <div class="country-name">Malaysia</div>
     </div>
+    <!-- South Korea -->
+    <div class="flag-container">
+      <div class="flag">
+        <img src="https://flagcdn.com/w320/kr.png" alt="South Korea Flag">
+      </div>
+      <div class="country-name">South Korea</div>
     </div>
+    <!-- Vietnam -->
+    <div class="flag-container">
+      <div class="flag">
+        <img src="https://flagcdn.com/w320/vn.png" alt="Vietnam Flag">
+      </div>
+      <div class="country-name">Vietnam</div>
+    </div>
+    <!-- Russia -->
+    <div class="flag-container">
+      <div class="flag">
+        <img src="https://flagcdn.com/w320/ru.png" alt="Russia Flag">
+      </div>
+      <div class="country-name">Russia</div>
+    </div>
+    <!-- Thailand -->
+    <div class="flag-container">
+      <div class="flag">
+        <img src="https://flagcdn.com/w320/th.png" alt="Thailand Flag">
+      </div>
+      <div class="country-name">Thailand</div>
     </div>
   </div>
-</div>
 
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Owl Carousel JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-<!-- Bootstrap JS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script>
-  $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      dots: false,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 1
-        },
-        1000: {
-          items: 1
-        }
-      }
-    });
-  });
-</script>
-
+  <!-- Bootstrap 4 JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
