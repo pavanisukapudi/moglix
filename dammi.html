@@ -1,125 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Single Row Flags</title>
-  <!-- Bootstrap 4 CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .flags-row {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-      overflow-x: auto; /* Enables horizontal scroll on smaller screens */
-      padding: 20px;
-      background-color: #f8f9fa;
-    }
-    .flag-container {
-      text-align: center;
-      margin: 10px;
-    }
-    .flag {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #ffffff;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .flag img {
-      width: 60%;
-    }
-    .country-name {
-      margin-top: 10px;
-      font-size: 16px;
-      font-weight: 500;
-    }
-    @media (max-width: 768px) {
-      .flag {
-        width: 80px;
-        height: 80px;
-      }
-      .country-name {
-        font-size: 14px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .image-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 400px;
+            display: none;
+        }
+
+        .image-container img.active {
+            display: block;
+        }
+
+        .nav-link {
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <div class="flags-row">
-    <!-- Japan -->
-    <div class="flag-container">
-      <div class="flag">
-        <img src="https://flagcdn.com/w320/jp.png" alt="Japan Flag">
-      </div>
-      <div class="country-name">Japan</div>
-    </div>
-    <!-- Italy -->
-    <div class="flag-container">
-      <div class="flag">
-        <img src="https://flagcdn.com/w320/it.png" alt="Italy Flag">
-      </div>
-      <div class="country-name">Italy</div>
-    </div>
-    <!-- Turkey -->
-    <div class="flag-container">
-      <div class="flag">
-        <img src="https://flagcdn.com/w320/tr.png" alt="Turkey Flag">
-      </div>
-      <div class="country-name">Türkiye</div>
-    </div>
-    <!-- Malaysia -->
-    <div class="flag-container">
-      <div class="flag">
-        <img src="https://flagcdn.com/w320/my.png" alt="Malaysia Flag">
-      </div>
-      <div class="country-name">Malaysia</div>
-    </div>
-    <!-- South Korea -->
-    <div class="flag-container">
-      <div class="flag">
-        <img src="https://flagcdn.com/w320/kr.png" alt="South Korea Flag">
-      </div>
-      <div class="country-name">South Korea</div>
-    </div>
-    <!-- Vietnam -->
-    <div class="flag-container">
-      <div class="flag">
-        <img src="https://flagcdn.com/w320/vn.png" alt="Vietnam Flag">
-      </div>
-      <div class="country-name">Vietnam</div>
-    </div>
-    <!-- Russia -->
-    <div class="flag-container">
-      <div class="flag">
-        <img src="https://flagcdn.com/w320/ru.png" alt="Russia Flag">
-      </div>
-      <div class="country-name">Russia</div>
-    </div>
-    <!-- Thailand -->
-    <div class="flag-container">
-      <div class="flag">
-        <img src="https://flagcdn.com/w320/th.png" alt="Thailand Flag">
-      </div>
-      <div class="country-name">Thailand</div>
-    </div>
-  </div>
 
-  <!-- Bootstrap 4 JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center my-4">Click a heading to change the image</h2>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" id="heading1" onclick="changeImage(0)">Heading 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="heading2" onclick="changeImage(1)">Heading 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="heading3" onclick="changeImage(2)">Heading 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="heading4" onclick="changeImage(3)">Heading 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="heading5" onclick="changeImage(4)">Heading 5</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row image-container">
+        <div class="col-12">
+            <img src="https://via.placeholder.com/400x300?text=Image+1" id="image1" class="active">
+            <img src="https://via.placeholder.com/400x300?text=Image+2" id="image2">
+            <img src="https://via.placeholder.com/400x300?text=Image+3" id="image3">
+            <img src="https://via.placeholder.com/400x300?text=Image+4" id="image4">
+            <img src="https://via.placeholder.com/400x300?text=Image+5" id="image5">
+        </div>
+    </div>
+</div>
+
+<script>
+    function changeImage(index) {
+        // Hide all images
+        const images = document.querySelectorAll('.image-container img');
+        images.forEach(img => img.classList.remove('active'));
+
+        // Show the selected image
+        const selectedImage = document.getElementById(`image${index + 1}`);
+        selectedImage.classList.add('active');
+
+        // Update active class on the headings
+        const links = document.querySelectorAll('.nav-link');
+        links.forEach(link => link.classList.remove('active'));
+        links[index].classList.add('active');
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

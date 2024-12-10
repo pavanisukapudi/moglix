@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: "Pacifico", serif;
+    font-family: "Inter", serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -172,8 +172,21 @@ body{
       .icon-box {
         margin-bottom: 10px; /* Add spacing between the icon and text */
       }
+      .section3 .owl-carousel .owl-nav button.owl-next{
+        position: relative;
+        left: 50px;
+        top: -41px;   
+   }
+   .section3 .owl-carousel .owl-nav button{
+    position: relative;
+    left: -50px;
+    top: -41px;   
+}
+.section3 .owl-dots {
+  text-align: center;
+}
       
-.owl-nav button {
+ .section3 .owl-nav button.owl-next{
     
     border-radius: 50%;
     padding: 10px;
@@ -181,11 +194,27 @@ body{
     width: 60px; /* Increase the button size */
     height: 60px; /* Increase the button size */
     font-size: 24px; /* Increase font size */
-    
+    left:30px ;
+    top: -20px;
+    position: relative;
+    background-color: #ddd;
+ }
+ .section3 .owl-nav button.owl-prev{
+  border-radius: 50%;
+  padding: 10px;
+  border: none;
+  width: 60px; /* Increase the button size */
+  height: 60px; /* Increase the button size */
+  font-size: 24px; /* Increase font size */
+  position: relative;
+  background-color: #ddd;
+
+ }
    
-/* }
+ 
 .owl-nav button:focus {
-    outline: none; /* Remove focus outline */
+    outline: none;
+ } /* Remove focus outline 
 } */
 .section4{
     background-color: #e1dbdb;
@@ -195,11 +224,63 @@ body{
   margin-left: auto;
 
 }
+.section4 .card-header{
+  background-color: #fff;
+border-bottom: 0;
+}
+
+
+.section4 .ear-headphones{
+  height: 500px;
+  background-color: lightblue;
+  border-radius: 12px;
+}
+.section4 .ear-headphones .score{
+  width: 180px;
+  background-color: #fff;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
+.section4 .section-4-rankings{
+  height: 100%;
+}
+.section4 .carousel-section{
+  position: relative;
+  height: 300px;
+  margin-top: 30px;
+  height: calc(300px -30px);
+
+}
+
+
+
+
+.section4 .iphone-section{
+  height: 500px;
+}
+.section4 .iphone-row{
+  height: 250px;
+  margin-bottom: 20px;
+  height: calc(250px -20px);
+
+
+}
+.section4 .iphone-last-row{
+  position: relative;
+  height: 170px;
+  
+  
+
+}
+
+
 .section4 .card-body1 {
   padding: .75rem 1.25rem;
   background-color: rgb(197, 233, 233);
   margin: 0 1.25rem;
   border-radius: 5px;
+  height: 100%;
 }
 .section4 .card-body1 p{
   width: 55%;
@@ -214,10 +295,13 @@ body{
 
 
 }
+.section4 .card{
+  border: none;
+}
 /* Position the dots at the bottom */
  .second-carousel .owl-dots {
   position: absolute;
-  bottom: 10px; /* Adjust this value as needed */
+  bottom: -50px; /* Adjust this value as needed */
   left: 0;
   right: 0;
   text-align: center;
@@ -341,6 +425,9 @@ body{
   padding: 30px;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3); 
+  height: 100%;
+  margin-bottom: 20px;
+  height: calc(100% - 20pxpx);
   /* aspect-ratio: 1/1;
   object-fit: contain;
   object-position: center; */
@@ -374,14 +461,8 @@ body{
  .section-6 h4{
   font-size: 3.0rem;
  }
-.section-7 .icon-boxs{
-  width: 60px;
-  height: 60px;
-  border-radius: 50px 50px;
-  background-color: rgb(230, 168, 127);
-  align-items: start;
-  position: absolute;
-  display: flex;
+.section-7 h5{
+  padding-top: 31px;
 }
 .section-7 .icon-content {
   display: flex;
@@ -411,6 +492,27 @@ body{
   color: rgb(110, 5, 5);
   font-size: 34px;
 
+}
+.image-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 800px;
+  display: none;
+}
+
+.image-container img.active {
+  display: block;
+}
+
+ .nav-links{
+  cursor: pointer;
+    padding-top: 22px;
+    font-size: 26px;
+    color: black;
 }
 .section8 h5{
   padding: 20px;
@@ -601,10 +703,14 @@ body{
   justify-content: center;
   margin: 70px;
 }
-.section10 .flags-containerimg{
-  width: 20px;
-  
+.flag-container img{
+  width: 60px;
 }
+.flag-container p{
+  padding: 10px;
+}
+
+
 .footer-section {
   background-color: #f8f9fa;
   padding: 30px 0;
