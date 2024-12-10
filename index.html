@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-      <title>moglix</title>
+      <title>moglix</title> 
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/vnd.microsoft.icon" href="https://www.moglix.com/assets/img/favicon-con.png"/>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="./assets/moglix-landingpage.css">
       <link rel="stylesheet" href="./assets/moglix-mediaquery.css">
 
@@ -150,10 +155,10 @@
           <div class="container py-5">
  
     
-    <div class="owl-carousel first-carousel owl-theme">
+    <div class="owl-carousel first-carousel">
       <div class="item">
         <div class="icon-box">
-           <i >            <img src="./assets/business-service.png" alt="">
+           <i > <img src="./assets/business-service.png" alt="">
 </i> 
         <p class="icon-text">business service</p></div>
         <div class="icon-box"><i ><img src="./assets/environment.png" alt=""></i>
@@ -229,26 +234,28 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4  py-5">
-                  <div class="d-flex">
+                <div class="col-md-4  py-5 section-4-rankings">
+                  <div class="d-flex ">
                     <h5>Top ranking</h5>
                     <a class="" href="">View more</a>
                   </div>
 
-                    <div class="card ">
-                      <div class="card-header border-bottom-0">
+                    
+                      <div class=" heading-part ">
                         <h2>Most popular</h2>
                         <p>Gaming in-Ear Headphones</p>
-
                       </div>
-                      <div class="card-body1 ">
-                        <p class="bg-white ">popular score: <b> 4.7</b></p>
-                        <img class="text-align-center" width="80%" src="./assets/buds-removebg-preview.png" alt="">
-
-
+                        <div class="ear-headphones">  
+                          <div class="score" >                                
+                        <p >popular score: <b> 4.7</b></p></div> 
+                        <img class="text-align-center"  src="./assets/buds-removebg-preview.png" alt="">
                       </div>
+                      
 
-                      <div class="owl-carousel second-carousel owl-theme d-flex py-5">
+
+                     <div class="carousel-section">
+
+                      <div class="owl-carousel second-carousel owl-theme  d-flex ">
                         <div class="item">
                           <div>
                             <img src="./assets/multiple_buds-removebg-preview.png" alt="">
@@ -286,28 +293,31 @@
                             <img src="./assets/buds2-removebg-preview.png" alt="">
 
                           </div>
+                        </div>
                          
 
                         </div>
-
                       </div>
 
-                    </div>
+                     
+
+                   
 
                 </div>
-                <div class="col-md-4 py-5">
-                  <div class="d-flex justify-content-between align-items-center ">
-                    <h5>New arrivals</h5>
-                    <a href="#">View more</a>
+                <div class="col-md-4  py-5 section-4-rankings">
+                  <div class="d-flex ">
+                    <h5>Top ranking</h5>
+                    <a class="" href="">View more</a>
                   </div>
                 
-                  <div class="card ">
-                    <div class="card-header border-bottom-0 bg-light ">
-                      <h2>115,000+ added products</h2>
+                  <div class="bg-white">
+                    <div  >
+                      <h2>115,00+ added </h2>
+                      <p>Gaming added products</p>
                     </div>
-                    <div class="card-body">
+                    <div class="iphone-section">
                       <!-- First Row -->
-                      <div class="row mb-3 ">
+                      <div  class="row iphone-row ">
                         <div class="col-md-6">
                         <div class=" bg-dark d-flex justify-content-center align-items-center mb-2 iphone " >
                           <img src="./assets/iphone-removebg-preview.png" width="70%" alt="Product Image">
@@ -320,7 +330,7 @@
                       </div>
                       </div>
                       <!-- Second Row -->
-                      <div class="row mb-3 ">
+                      <div  class="row iphone-row-2  ">
                         <div class="col-md-6">
                         <div class=" bg-dark d-flex justify-content-center align-items-cente mb-2 iphone" >
                           <img src="./assets/2iphone-removebg-preview.png" width="80%" alt="Product Image">
@@ -332,10 +342,12 @@
                         </div>
                       </div>
                       </div>
+                    </div>
+                  </div>
                       <!-- Third Row -->
-                      <div class="card mt-3">
-                        <div class="card-body">
-                      <div class="row ">
+                     
+                        
+                      <div class="row  iphone-last-row">
                         <div class="col-md-12  d-flex justify-content-left align-items-center" >
                           <img src="./assets/battery.jpg" width="40%" alt="Product Image">
                           <div class="ml-2 justify-content-center align-items-cente" >
@@ -344,17 +356,17 @@
                           </div>
                         </div>
                        
-                      </div>
-                    </div>
-                    </div>
-                    </div>
+                      
                     
-                  </div>
+                    </div>
+                   
+                    
+               
                  
 
                  
                 </div>
-                <div class="col-md-4 py-5">
+                <div class="col-md-4 py-5 section-4-rankings">
                   <div class="d-flex">
                     <h5>Top deals</h5>
                     <a class="" href="">View more</a>
@@ -374,10 +386,10 @@
                   </div>
 
                 </div>
-                <div class="card mb-3">
-                  <div class="card-header ">
+                <div class="card timer mb-3">
+                  <div class="card-header  ">
                     <h5>Deals on best sellers</h5>
-                    <div class="card-body">
+                    <div class="">
                       <img src="./assets/time.jpg" width="100%" alt="">
 
                     </div>
@@ -446,7 +458,7 @@
       <div class="col-md-6">
         <div class="content-card text-left">
           <h5>Ensure production quality with</h5>
-          <h5><span >✔ Verified Supplier</span></h5>
+          <h5><span ><img src="./assets/verified-supplier.png" width="50%" alt=""></span></h5>
           <p>
             Connect with a variety of suppliers with third-party-verified credentials
             and capabilities. Look for the “Verified” logo to begin sourcing with experienced
@@ -462,7 +474,7 @@
       <div class="col-md-6">
         <div class="content-card text-left">
           <h5>Protect your purchase with</h5>
-          <h5><span >💰 Trade Assurance</span></h5>
+          <h5><span ><img src="./assets/tradasurance.jpg" width="50%" alt=""></span></h5>
           <p>
             Source confidently with access to secure payment options, protection against
             product or shipping issues, and mediation support for any purchase-related concerns
@@ -488,54 +500,41 @@
     <!-- Left Column -->
     <div class="col-md-6 ">
       <h2 class="py-5">Streamline ordering from search to fulfillment, all in one place</h2>
-      <div class="icon-content my-4 ">
-        <div class="icon">
-          <i class="fas fa-search"></i>
-        </div>
-        <div class="icon-texts">
-          <h5 class="search">Search for matches</h5>
-          <p>Lorem ipsum dolor sit amet consectetur,ellendus labore, incidunt quos facilis. Omnis labore vero est?</p>
 
-        </div><br>
-      </div>
-      <div class="icon-content my-4 ">
-        <div class="icon">
-          <i class="fas fa-check-circle"></i>
-        </div>
-        <div class="icon-texts">
-          <h5>Identify the right one</h5>
-        </div>
-      </div>
-      <div class="icon-content my-4 ">
-        <div class="icon">
-          <i class="fas fa-credit-card"></i>
-        </div>
-        <div class="icon-texts">
-          <h5>Pay with confidence</h5>
-        </div>
-      </div>
-      <div class="icon-content my-4 ">
-        <div class="icon">
-          <i class="fas fa-globe"></i>
-        </div>
-        <div class="icon-texts">
-          <h5>Fulfill with transparency</h5>
-        </div>
-      </div>
-      <div class="icon-content my-4 ">
-        <div class="icon">
-          <i class="fas fa-user-circle"></i>
-        </div>
-        <div class="icon-texts">
-          <h5>Manage with ease</h5>
-        </div>
+      <ul>
+        <li class="d-flex ">
+          <img src="./assets/search2.png" alt="">
+          <a class="nav-links active" id="heading1" onclick="changeImage(0)">Search for matches </a>
+        </li>
+           <li class="d-flex ">
+            <img src="./assets/2nd.png" alt="">
+            <a class="nav-links" id="heading2" onclick="changeImage(1)">Identify the right one</a>
+          </li>
+             <li class="d-flex ">
+              <img src="./assets/3rdone.png" alt="">
+              <a class="nav-links" id="heading3" onclick="changeImage(2)">Pay with confidence</a>
+            </li>
+               <li class="d-flex ">
+                <img src="./assets/4thone.png" alt="">
+                <a class="nav-links" id="heading4" onclick="changeImage(3)">Full fill with transparency</a>
+              </li>
+                 <li class="d-flex ">
+                  <img src="./assets/5thone.png" alt="">
+                  <a class="nav-links" id="heading5" onclick="changeImage(4)">Manage with ease</a>
+                </li>
+           
+      </ul>
+     
       </div>
 
-    </div>
-    <div class="col-md-6 py-5 justify-content-start align-items-center text-align-center ">
-<img src="./assets/allimage.jpg" width="100%" alt="">
 
-    </div>
+     <div class="col-6 py-4 image-container">
+            <img src="./assets/allimage.jpg" id="image1" width="100%" class="active">
+            <img src="./assets/shoes.jpg" id="image2">
+            <img src=".//assets/toy.jpg" id="image3">
+            <img src="./assets/multi-mobiles.jpg" id="image4">
+            <img src="./assets/beauty.png" id="image5">
+        </div>
 
 
   </div>
@@ -657,25 +656,25 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel cupiditate consect
   <a href="">View more <i ><img src="./assets/arrow-right-line.png" alt=""></i></a>
 
 </div>
-<div class="row d-flex py-5">
-<div class="col-6 col-md text-align-center align-items-center justify-content-center">
-  <div class="flags-container">
-  <img src="./assets/japan.png" alt="">
+<div class="row d-flex py-5 flag-container">
+<div class="col-6 col-md text-align-center align-items-center justify-content-center ">
+  <div >
+  <img src="./assets/world (1).png" alt="">
 </div>
   <p>japn</p>
 
 
 </div>
 <div class="col-6 col-md">
-  <div class="flags-container">
-  <img src="./assets/italy.jpg" alt="">
+  <div >
+  <img src="./assets/italy6.png" alt="">
 </div>
-  <p class="py-3">italy</p>
+  <p >italy</p>
 
 
 </div>
 <div class="col-6 col-md">
-  <div class="flags-container">
+  <div >
   <img src="./assets/Turkey.png" alt="">
 </div>
   <p>Turkey</p>
@@ -683,7 +682,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel cupiditate consect
 
 </div>
 <div class="col-6 col-md">
-  <div class="flags-container">
+  <div >
   <img src="./assets/malayasia.png" alt="">
 </div>
   <p>Malayasia</p>
@@ -691,23 +690,23 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel cupiditate consect
 
 </div>
 <div class="col-6 col-md">
-  <div class="flags-container">
-  <img src="./assets/south korea.png" alt="">
+  <div >
+  <img src="./assets/portugal.png" alt="">
 </div>
   <p>South korea</p>
 
 
 </div>
 <div class="col-6 col-md">
-  <div class="flags-container">
-  <img src="./assets/vietenma.png" alt="">
+  <div >
+  <img src="./assets/vietnam.png" alt="">
 </div>
   <p>Vietnam</p>
 
 
 </div>
 <div class="col-6 col-md">
-  <div class="flags-container">
+  <div >
   <img src="./assets/russia.png" alt="">
 </div>
   <p>Russia</p>
@@ -715,8 +714,8 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel cupiditate consect
 
 </div>
 <div class="col-6 col-md">
-  <div class="flags-container">
-  <img src="./assets/tailand.png" alt="">
+  <div >
+  <img src="./assets/thailand.png" alt="">
 </div>
   <p>Thailand</p>
 
@@ -818,19 +817,18 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel cupiditate consect
     loop: true,
     margin: 20,
     nav: true,
-    dots: true,
     autoplay: true,
     autoplayTimeout: 4000,
     navText: [
-      '<button class="fa-solid fa-less-than"></button>',
-      '<button class="fa-solid fa-greater-than"></button>',
-    ],
+    '<i class="fa fa-chevron-left"></i>', // Left icon
+      '<i class="fa fa-chevron-right"></i>' // Right icon
+  ],
     responsive: {
       0: {
-        items: 3, // Adjust for small screens
+        items: 1, // Adjust for small screens
       },
       768: {
-        items: 4, // Adjust for medium screens
+        items: 3, // Adjust for medium screens
       },
       1024: {
         items: 5, // Adjust for larger screens
@@ -884,6 +882,21 @@ $(document).ready(function () {
     }
   });
 });
+
+function changeImage(index) {
+        // Hide all images
+        const images = document.querySelectorAll('.image-container img');
+        images.forEach(img => img.classList.remove('active'));
+
+        // Show the selected image
+        const selectedImage = document.getElementById(`image${index + 1}`);
+        selectedImage.classList.add('active');
+
+        // Update active class on the headings
+        const links = document.querySelectorAll('.nav-link');
+        links.forEach(link => link.classList.remove('active'));
+        links[index].classList.add('active');
+    }
 
 
   </script>
