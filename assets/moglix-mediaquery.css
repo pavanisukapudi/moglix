@@ -16,12 +16,24 @@
     .section-6 h4{
         font-size: 1.5rem;
        }
-       .section-6 .content-card{
-        /* aspect-ratio: 1/1; */
-        object-fit: contain;
-        object-position: center;
-        height: 350px;
-
+       @media only screen and (max-width: 800px)
+       {
+        .section4 .ranking-card {
+           
+            /* margin-bottom: 20px; */
+            /* height: 551px; */
+        }
        }
-   
+       
   }
+  @media only screen and (max-width: 780px){
+    .section10 .bg-image2  {
+      
+        margin-left: 0px;
+    }
+    .section10 .bg-image3  {
+      
+        margin-left: 0px;
+    }
+  }
+ 
