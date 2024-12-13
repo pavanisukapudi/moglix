@@ -36,4 +36,94 @@
         margin-left: 0px;
     }
   }
+  @media only screen and (max-width: 1583px){
+    .section4  .ranking-card1 {
+        border-radius: 17px;
+        /* margin-bottom: 20px; */
+        height: 500px;
+        padding: 20px;
+       }
+       .section4  .ranking-card5 {
+        border-radius: 17px;
+        /* margin-bottom: 20px; */
+        height: calc(200px - 20px);
+        padding: 20px;
+        height: 500px;
+      
+        margin-top: 20px;
+       }
+       .section4  .ranking-card4 {
+        border-radius: 17px;
+        /* margin-bottom: 20px; */
+        height: 50px;
+        height: calc(200px - 20px);
+      
+       }
+       .section4  .ranking-card {
+        border-radius: 17px;
+        /* margin-bottom: 20px; */
+        height: 700px;
+       }
+
+  }
+  @media only screen and (max-width: 760px){
+    .section4  .ranking-card1 {
+        border-radius: 17px;
+        /* margin-bottom: 20px; */
+        height: 700px;
+        padding: 20px;
+       }
+       .section4  .ranking-card5 {
+        border-radius: 17px;
+        /* margin-bottom: 20px; */
+        height: calc(200px - 20px);
+        padding: 20px;
+        height: 700px;
+      
+        margin-top: 20px;
+       }
+       .section4  .ranking-card4 {
+        border-radius: 17px;
+        /* margin-bottom: 20px; */
+        height: 100%;
+        height: calc(200px - 20px);
+      
+       }
+       .section4  .ranking-card {
+        border-radius: 17px;
+        /* margin-bottom: 20px; */
+        height: 900px;
+       }
+       .section3 .owl-carousel .owl-nav button.owl-next {
+        position: relative;
+        left: -4px;
+        top: -41px;
+    }
+    .section3 .owl-carousel .owl-nav button {
+        position: relative;
+        left: 44px;
+        top: -41px;
+    }
+    .section8 .third-carousel {
+        height: auto;
+        background-color: #fff;
+        padding: 10px 48px;
+        border-radius: 10px;
+    }
+    .section8 .owl-carousel .owl-item img {
+        display: block;
+        max-width: 150px;
+        padding-left: 5px;
+    }
+
+  }
+  @media only screen and (max-width: 821px){
+    .section3 .owl-carousel .owl-nav button.owl-next {
+        position: relative;
+        /* left: 24px; */
+        top: -41px;
+    }
+  
+
+  }
  
