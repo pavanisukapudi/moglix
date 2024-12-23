@@ -67,15 +67,13 @@
 
   }
   @media only screen and (max-width: 760px){
-    .section4  .ranking-card1 {
+    /* .section4  .ranking-card1 {
         border-radius: 17px;
-        /* margin-bottom: 20px; */
         height: 700px;
         padding: 20px;
        }
        .section4  .ranking-card5 {
         border-radius: 17px;
-        /* margin-bottom: 20px; */
         height: calc(200px - 20px);
         padding: 20px;
         height: 700px;
@@ -84,16 +82,14 @@
        }
        .section4  .ranking-card4 {
         border-radius: 17px;
-        /* margin-bottom: 20px; */
         height: 100%;
         height: calc(200px - 20px);
       
        }
        .section4  .ranking-card {
         border-radius: 17px;
-        /* margin-bottom: 20px; */
         height: 900px;
-       }
+       } */
        .section3 .owl-carousel .owl-nav button.owl-next {
         position: relative;
         left: -4px;
@@ -120,10 +116,38 @@
   @media only screen and (max-width: 821px){
     .section3 .owl-carousel .owl-nav button.owl-next {
         position: relative;
-        /* left: 24px; */
+        left: px;
         top: -41px;
     }
   
 
+  }
+
+
+  @media only screen and (max-width: 578px){
+  .section4 .card-carousel img {
+    max-width: 140px;
+}
+.section4 .ranking-card .buds-img img {
+    width: 70%;
+}
+.ranking-card1 .mask-img img {
+    width: 50%;
+    height: 50%;
+    
+}
+.section3 .owl-carousel .owl-nav button.owl-next{
+    position: relative;
+    left: -36px;
+    top: -41px;   
+}
+.section3 .owl-carousel .owl-nav button{
+position: relative;
+left: 15px;
+top: -41px;   
+}
+  }
+  @media only screen and (max-width: 1068px){
+ 
   }
  
