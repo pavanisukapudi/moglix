@@ -147,7 +147,20 @@ left: 15px;
 top: -41px;   
 }
   }
-  @media only screen and (max-width: 1068px){
- 
-  }
+  @media only screen and (min-width: 375px) and (max-width: 1400px) {
+    .navbar .collapse {
+        padding-left: 0px;
+    }
+    .section10 .background-image{
+       min-height: 600px;
+       height:100%;
+       position: relative;
+       margin-bottom: 30px;
+      }
+    .stats {
+        display: flex;
+            padding-left: 0px;
+            padding-top: 10px;
+    }
+}
  
