@@ -119,7 +119,7 @@ body{
     padding-left: 40px;
   }
   .stat-item {
-    padding-left: 20px;
+    /* padding-left: 20px; */
     border-left: 2px solid #e6e6e6;
     margin-bottom: 20px;
    
@@ -183,16 +183,19 @@ body{
       }
       .section3 .owl-carousel .owl-nav button.owl-next{
         position: relative;
-        left: 50px;
+        left: 62px;
         top: -41px;   
    }
    .section3 .owl-carousel .owl-nav button{
     position: relative;
-    left: -50px;
+    left: -62px;
     top: -41px;   
 }
 .section3 .owl-dots {
   text-align: center;
+}
+.section3 .carousel-container {
+  padding: 0px 62px;
 }
 .owl-carousel .owl-dot {
   display: inline-block;
@@ -764,6 +767,7 @@ body{
 }
 .section8 {
   background-color: #ddd;
+  overflow: hidden;
 }
 .section8  .third-carousel .owl-carousel .owl-nav button.owl-prev{
   box-shadow: none;
@@ -884,7 +888,7 @@ body{
   border-radius: 20px;
   text-align: start;
   /* margin-bottom: auto; */
- height: 600px;
+ height:100%;
  position: relative;
  margin-bottom: 30px;
 }
@@ -909,7 +913,7 @@ body{
   height: 350px;
   height: calc(350px - 30px);
   margin-bottom: 30px; 
-  margin-left: 30px;
+  /* margin-left: 30px; */
   width: 100%;
 }
 .section10 .bg-image3{
@@ -918,7 +922,7 @@ body{
   border-radius: 20px;
   position: relative;
   text-align: start;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 
   height: 250px;
 
