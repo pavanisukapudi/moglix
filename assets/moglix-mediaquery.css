@@ -10,21 +10,13 @@
     .input-group .crystall{
         width: 180px;
     }
-     
+   
   }
   @media only screen and (max-width: 1600px) {
     .section-6 h4{
         font-size: 1.5rem;
        }
-       @media only screen and (max-width: 800px)
-       {
-        .section4 .ranking-card {
-           
-            /* margin-bottom: 20px; */
-            /* height: 551px; */
-        }
-       }
-       
+      
   }
   @media only screen and (max-width: 780px){
     .section10 .bg-image2  {
@@ -151,12 +143,12 @@ top: -41px;
     .navbar .collapse {
         padding-left: 0px;
     }
-    .section10 .background-image{
+    /* .section10 .background-image{
        min-height: 600px;
        height:100%;
        position: relative;
        margin-bottom: 30px;
-      }
+      } */
     .stats {
         display: flex;
             padding-left: 0px;
