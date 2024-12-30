@@ -130,12 +130,12 @@
 }
 .section3 .owl-carousel .owl-nav button.owl-next{
     position: relative;
-    left: -36px;
+    /* left: -36px; */
     top: -41px;   
 }
 .section3 .owl-carousel .owl-nav button{
 position: relative;
-left: 15px;
+/* left: 15px; */
 top: -41px;   
 }
   }

@@ -1,103 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonial Carousel</title>
+    <title>Bootstrap 4 Categories</title>
     <!-- Bootstrap 4 CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons (optional) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
-        .testimonial {
-            background: #f9f9f9;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .testimonial .author-img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-right: 15px;
-        }
-
-        .testimonial .author-img img {
-            width: 100%;
-            height: auto;
-        }
-
-        .testimonial .quote {
-            font-size: 50px;
-            color: #ddd;
-            position: absolute;
-            top: -15px;
-            left: -15px;
-            z-index: 0;
-        }
-
-        .testimonial .content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .testimonial .author-name {
+        /* Custom styles for active categories */
+        .nav-link.active {
             font-weight: bold;
-            font-size: 18px;
-        }
-
-        .testimonial .author-role {
-            font-size: 14px;
-            color: #777;
+            color: #007bff;
         }
     </style>
 </head>
-
 <body>
-    <div class="container my-5">
-        <div class="owl-carousel owl-theme">
-            <div class="testimonial">
-                <div class="d-flex align-items-center">
-                    <div class="author-img">
-                        <img src="https://via.placeholder.com/80" alt="Author Image">
-                    </div>
-                    <div>
-                        <p class="author-name mb-0">Eva Jane</p>
-                        <p class="author-role">Founder of Eva Jane Beauty</p>
-                    </div>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Category Navigation -->
+        <div class="col-md-3">
+            <div class="list-group" id="category-tabs">
+                <a href="#" class="list-group-item list-group-item-action active" id="top-categories-tab" data-toggle="list" role="tab" aria-controls="top-categories">Top categories</a>
+                <a href="#" class="list-group-item list-group-item-action" id="home-decor-tab" data-toggle="list" role="tab" aria-controls="home-decor">Home Decor</a>
+                <a href="#" class="list-group-item list-group-item-action" id="industrial-tab" data-toggle="list" role="tab" aria-controls="industrial">Industrial</a>
+                <a href="#" class="list-group-item list-group-item-action" id="health-personal-care-tab" data-toggle="list" role="tab" aria-controls="health-personal-care">Health & Personal Care</a>
+                <a href="#" class="list-group-item list-group-item-action" id="fashion-beauty-tab" data-toggle="list" role="tab" aria-controls="fashion-beauty">Fashion & Beauty</a>
+                <a href="#" class="list-group-item list-group-item-action" id="sports-entertainment-tab" data-toggle="list" role="tab" aria-controls="sports-entertainment">Sports & Entertainment</a>
+                <a href="#" class="list-group-item list-group-item-action" id="tools-home-improvement-tab" data-toggle="list" role="tab" aria-controls="tools-home-improvement">Tools & Home Improvement</a>
+                <a href="#" class="list-group-item list-group-item-action" id="raw-materials-tab" data-toggle="list" role="tab" aria-controls="raw-materials">Raw Materials</a>
+                <a href="#" class="list-group-item list-group-item-action" id="maintenance-tab" data-toggle="list" role="tab" aria-controls="maintenance">Maintenance, Repair & Operations</a>
+            </div>
+        </div>
+
+        <!-- Category Content -->
+        <div class="col-md-9">
+            <div class="tab-content" id="category-tabs-content">
+                <div class="tab-pane fade show active" id="top-categories" role="tabpanel" aria-labelledby="top-categories-tab">
+                    <h4>Top Categories</h4>
+                    <p>Browse through the most popular categories in our marketplace.</p>
                 </div>
-                <div class="content mt-3">
-                    <span class="quote">“</span>
-                    <p>As an entrepreneur who is deeply involved in the Beauty industry, I have been very devoted to creating my original products. Alibaba.com has been my trusted partner in this process.</p>
+                <div class="tab-pane fade" id="home-decor" role="tabpanel" aria-labelledby="home-decor-tab">
+                    <h4>Home Decor</h4>
+                    <p>Discover beautiful and stylish home decor items.</p>
+                </div>
+                <div class="tab-pane fade" id="industrial" role="tabpanel" aria-labelledby="industrial-tab">
+                    <h4>Industrial</h4>
+                    <p>Explore industrial equipment and materials.</p>
+                </div>
+                <div class="tab-pane fade" id="health-personal-care" role="tabpanel" aria-labelledby="health-personal-care-tab">
+                    <h4>Health & Personal Care</h4>
+                    <p>Browse health products and personal care items.</p>
+                </div>
+                <div class="tab-pane fade" id="fashion-beauty" role="tabpanel" aria-labelledby="fashion-beauty-tab">
+                    <h4>Fashion & Beauty</h4>
+                    <p>Shop the latest trends in fashion and beauty.</p>
+                </div>
+                <div class="tab-pane fade" id="sports-entertainment" role="tabpanel" aria-labelledby="sports-entertainment-tab">
+                    <h4>Sports & Entertainment</h4>
+                    <p>Find sports equipment and entertainment options.</p>
+                </div>
+                <div class="tab-pane fade" id="tools-home-improvement" role="tabpanel" aria-labelledby="tools-home-improvement-tab">
+                    <h4>Tools & Home Improvement</h4>
+                    <p>Browse tools and products for home improvement projects.</p>
+                </div>
+                <div class="tab-pane fade" id="raw-materials" role="tabpanel" aria-labelledby="raw-materials-tab">
+                    <h4>Raw Materials</h4>
+                    <p>Get raw materials for manufacturing and production.</p>
+                </div>
+                <div class="tab-pane fade" id="maintenance" role="tabpanel" aria-labelledby="maintenance-tab">
+                    <h4>Maintenance, Repair & Operations</h4>
+                    <p>Browse products for maintenance, repair, and operations.</p>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- Bootstrap 4 JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                nav: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    }
-                }
-            });
-        });
-    </script>
+<!-- Bootstrap 4 JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Activate the first tab by default
+    $(document).ready(function() {
+        $('#category-tabs .list-group-item').first().addClass('active');
+        $('.tab-pane').first().addClass('show active');
+    });
+
+    // Custom JS to handle category switching
+    $('#category-tabs .list-group-item').on('click', function() {
+        var targetTab = $(this).attr('aria-controls');
+        $('#category-tabs .list-group-item').removeClass('active');
+        $(this).addClass('active');
+        $('.tab-pane').removeClass('show active');
+        $('#' + targetTab).addClass('show active');
+    });
+</script>
+
 </body>
-
 </html>
