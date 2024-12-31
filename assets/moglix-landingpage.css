@@ -74,7 +74,7 @@ body{
 }
 
 a {
-  color: #007bff;
+  color: #ff6600;
   text-decoration: none;
 }
 button:focus,
@@ -84,7 +84,8 @@ input:focus {
 }
 a,
 a:hover {
-  text-decoration: none;
+  /* text-decoration: none; */
+  color: red;
 }
 
 
@@ -104,6 +105,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 150px;
 }
 .logo-section a {
   font-weight: 800;
@@ -131,7 +133,7 @@ li {
   position: relative;
 }
 
-.main_menu nav > ul > li > a:before {
+.main_menu nav > ul >   li > a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -140,14 +142,22 @@ li {
   top: 0;
   background-color: #5161ce;
   opacity: 0;
-  visibility: hidden;
+  /* visibility: hidden; */
   transition: 0.5s;
+  
 }
 
 .main_menu nav > ul > li > a:hover:before {
   color: #5161ce;
   opacity: 1;
   visibility: visible;
+}
+.right-nav{
+  margin-right: 400px;
+}
+.qr-code {
+  width: 120px;
+  height: auto;
 }
 
 .main_menu nav ul li ul.mega_menu {
@@ -160,6 +170,7 @@ li {
   border-radius: 4px;
   left: 0;
   /* right: auto; */
+  right: 0;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.15s;
@@ -177,7 +188,9 @@ li {
   transition: 0.15s;
   z-index: 9;
   top: 140%;
-  height: 300px;
+  height: 360px;
+  left: 0;
+  right: 0;
 }
 .sub_menu .card{
 
@@ -186,6 +199,36 @@ li {
   margin: 20px;
 
 }
+/* trade */
+.trade-assurance {
+  text-align: left;
+}
+.btn-learn-more {
+  background-color: #ff6a00;
+  color: #fff;
+  border: none;
+}
+.btn-learn-more:hover {
+  background-color: #e65c00;
+  color: #fff;
+}
+.info-card {
+  border: 1px solid #f8f9fa;
+  border-radius: 5px;
+  /* padding: 15px; */
+  text-align: center;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.info-card .pera{
+  margin-top: 28px;
+}
+.info-card:hover {
+  background-color: #f8f9fa;
+}
+
+/* close */
 
 
 .sub_menu .card-img{
@@ -197,10 +240,12 @@ li {
   line-height: 50px;
 }
 .main_menu nav ul li:hover .sub_menu,
+
 .main_menu nav ul li:hover .mega_menu {
   opacity: 1;
   visibility: visible;
   top: 100%;
+
 }
 .sub_menu li a {
   padding: 7px 20px;
