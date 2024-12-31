@@ -3,103 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 4 Categories</title>
-    <!-- Bootstrap 4 CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome for Icons (optional) -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <title>All Categories Hover</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        /* Custom styles for active categories */
-        .nav-link.active {
+        .categories-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .categories-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            padding: 15px;
+            z-index: 1;
+            width: 100%;
+        }
+
+        .categories-container:hover .categories-content {
+            display: flex;
+        }
+
+        .categories-content {
+            flex-wrap: wrap;
+        }
+
+        .category-column {
+            flex: 1;
+            padding: 10px;
+            min-width: 200px;
+        }
+
+        .category-column h6 {
             font-weight: bold;
-            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .category-column a {
+            display: block;
+            color: #000;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+
+        .category-column a:hover {
+            background-color: #f8f9fa;
+            color: #343a40;
         }
     </style>
 </head>
 <body>
-
-<div class="container mt-5">
-    <div class="row">
-        <!-- Category Navigation -->
-        <div class="col-md-3">
-            <div class="list-group" id="category-tabs">
-                <a href="#" class="list-group-item list-group-item-action active" id="top-categories-tab" data-toggle="list" role="tab" aria-controls="top-categories">Top categories</a>
-                <a href="#" class="list-group-item list-group-item-action" id="home-decor-tab" data-toggle="list" role="tab" aria-controls="home-decor">Home Decor</a>
-                <a href="#" class="list-group-item list-group-item-action" id="industrial-tab" data-toggle="list" role="tab" aria-controls="industrial">Industrial</a>
-                <a href="#" class="list-group-item list-group-item-action" id="health-personal-care-tab" data-toggle="list" role="tab" aria-controls="health-personal-care">Health & Personal Care</a>
-                <a href="#" class="list-group-item list-group-item-action" id="fashion-beauty-tab" data-toggle="list" role="tab" aria-controls="fashion-beauty">Fashion & Beauty</a>
-                <a href="#" class="list-group-item list-group-item-action" id="sports-entertainment-tab" data-toggle="list" role="tab" aria-controls="sports-entertainment">Sports & Entertainment</a>
-                <a href="#" class="list-group-item list-group-item-action" id="tools-home-improvement-tab" data-toggle="list" role="tab" aria-controls="tools-home-improvement">Tools & Home Improvement</a>
-                <a href="#" class="list-group-item list-group-item-action" id="raw-materials-tab" data-toggle="list" role="tab" aria-controls="raw-materials">Raw Materials</a>
-                <a href="#" class="list-group-item list-group-item-action" id="maintenance-tab" data-toggle="list" role="tab" aria-controls="maintenance">Maintenance, Repair & Operations</a>
-            </div>
-        </div>
-
-        <!-- Category Content -->
-        <div class="col-md-9">
-            <div class="tab-content" id="category-tabs-content">
-                <div class="tab-pane fade show active" id="top-categories" role="tabpanel" aria-labelledby="top-categories-tab">
-                    <h4>Top Categories</h4>
-                    <p>Browse through the most popular categories in our marketplace.</p>
-                </div>
-                <div class="tab-pane fade" id="home-decor" role="tabpanel" aria-labelledby="home-decor-tab">
-                    <h4>Home Decor</h4>
-                    <p>Discover beautiful and stylish home decor items.</p>
-                </div>
-                <div class="tab-pane fade" id="industrial" role="tabpanel" aria-labelledby="industrial-tab">
-                    <h4>Industrial</h4>
-                    <p>Explore industrial equipment and materials.</p>
-                </div>
-                <div class="tab-pane fade" id="health-personal-care" role="tabpanel" aria-labelledby="health-personal-care-tab">
-                    <h4>Health & Personal Care</h4>
-                    <p>Browse health products and personal care items.</p>
-                </div>
-                <div class="tab-pane fade" id="fashion-beauty" role="tabpanel" aria-labelledby="fashion-beauty-tab">
-                    <h4>Fashion & Beauty</h4>
-                    <p>Shop the latest trends in fashion and beauty.</p>
-                </div>
-                <div class="tab-pane fade" id="sports-entertainment" role="tabpanel" aria-labelledby="sports-entertainment-tab">
-                    <h4>Sports & Entertainment</h4>
-                    <p>Find sports equipment and entertainment options.</p>
-                </div>
-                <div class="tab-pane fade" id="tools-home-improvement" role="tabpanel" aria-labelledby="tools-home-improvement-tab">
-                    <h4>Tools & Home Improvement</h4>
-                    <p>Browse tools and products for home improvement projects.</p>
-                </div>
-                <div class="tab-pane fade" id="raw-materials" role="tabpanel" aria-labelledby="raw-materials-tab">
-                    <h4>Raw Materials</h4>
-                    <p>Get raw materials for manufacturing and production.</p>
-                </div>
-                <div class="tab-pane fade" id="maintenance" role="tabpanel" aria-labelledby="maintenance-tab">
-                    <h4>Maintenance, Repair & Operations</h4>
-                    <p>Browse products for maintenance, repair, and operations.</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <div class="categories-container">
+                <a class="nav-link active" href="#" id="allCategories">All Categories</a>
+                <div class="categories-content">
+                    <div class="category-column">
+                        <h6>Top Categories</h6>
+                        <a href="#">Home Decor</a>
+                        <a href="#">Industrial</a>
+                        <a href="#">Health & Personal Care</a>
+                        <a href="#">Fashion & Beauty</a>
+                        <a href="#">Sports & Entertainment</a>
+                    </div>
+                    <div class="category-column">
+                        <h6>Consumer Electronics</h6>
+                        <a href="#">Telephone Headsets</a>
+                        <a href="#">Action & Sports Cameras</a>
+                        <a href="#">Used Mobile Phones</a>
+                        <a href="#">HiFi Earphones & Headphones</a>
+                        <a href="#">Mobile Phone Motherboards</a>
+                    </div>
+                    <div class="category-column">
+                        <h6>Other Categories</h6>
+                        <a href="#">Tools & Home Improvement</a>
+                        <a href="#">Raw Materials</a>
+                        <a href="#">Packaging & Printing</a>
+                        <a href="#">Jewelry, Watches & Accessories</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </nav>
 
-<!-- Bootstrap 4 JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script>
-    // Activate the first tab by default
-    $(document).ready(function() {
-        $('#category-tabs .list-group-item').first().addClass('active');
-        $('.tab-pane').first().addClass('show active');
-    });
-
-    // Custom JS to handle category switching
-    $('#category-tabs .list-group-item').on('click', function() {
-        var targetTab = $(this).attr('aria-controls');
-        $('#category-tabs .list-group-item').removeClass('active');
-        $(this).addClass('active');
-        $('.tab-pane').removeClass('show active');
-        $('#' + targetTab).addClass('show active');
-    });
-</script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
