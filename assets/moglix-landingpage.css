@@ -233,6 +233,25 @@ li {
 .info-card:hover {
   background-color: #f8f9fa;
 }
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, .5);
+  border-color: none;
+}
+
+.header_static .navbar-toggler{
+  display: none;
+}
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex
+;
+  -ms-flex-direction: column;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  /* padding-top: 25px; */
+}
 
 /* close */
 
