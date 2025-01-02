@@ -156,3 +156,13 @@ top: -41px;
     }
 }
  
+
+
+@media only screen and (max-width: 990px){
+.navbar-nav{
+    display: none;
+}
+.right-nav{
+    margin-right: 0px;
+  }
+}

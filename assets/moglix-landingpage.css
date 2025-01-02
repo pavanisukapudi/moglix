@@ -10,9 +10,7 @@ body{
    
 }
 
-.navbar-brand{
-    padding-left: 200px;
-}
+
 
 .nav-link {
   text-align: center;
@@ -59,6 +57,7 @@ body{
 
 .navbar .collapse{
     padding-left: 150px;
+    display: block;
 
 }
 .products{
@@ -72,6 +71,7 @@ body{
 
     
 }
+
 
 a {
   color: #ff6600;
@@ -95,17 +95,21 @@ a:hover {
 li {
   list-style: none;
 }
+.realtive-sec {
+  position: unset;
+}
 .header_bottom {
+  position: relative;
   padding: 0px 10px;
   background-color: #fff;
   box-shadow: 0px 2px 3px rgb(0 0 0 / 16%);
 }
 .header_static {
-  position: relative;
+  position: unset;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 150px;
+  /* padding-left: 150px; */
 }
 .logo-section a {
   font-weight: 800;
@@ -147,13 +151,13 @@ li {
   
 }
 
-.main_menu nav > ul > li > a:hover:before {
-  color: #5161ce;
-  opacity: 1;
-  visibility: visible;
+.main_menu nav > ul > li > a:hover:before, .main_menu nav > ul > li:hover > a:before {
+    color: #5161ce;
+    opacity: 1;
+    visibility: visible;
 }
 .right-nav{
-  margin-right: 400px;
+  margin-right: 200px;
 }
 .qr-code {
   width: 120px;
@@ -162,15 +166,16 @@ li {
 
 .main_menu nav ul li ul.mega_menu {
   position: absolute;
-  min-width: 100%;
+  width: 100%;
   height: 750px;
   padding: 0;
   background: #fff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
-  left: 0;
+  left: 15px;
   /* right: auto; */
-  right: 0;
+  right: 15px;
+  width: calc(100% - 30px);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.15s;
@@ -189,8 +194,9 @@ li {
   z-index: 9;
   top: 140%;
   height: 360px;
-  left: 0;
-  right: 0;
+  left: 15px;
+  right:15px;
+  width: calc(100% - 30px);
 }
 .sub_menu .card{
 
