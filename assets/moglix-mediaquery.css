@@ -18,12 +18,7 @@
     .header_static .collapse:not(.show) {
         display: block;
     }
-    button.navbar-toggler.collapsed {
-        background-color: red;
-        color: black;
-        display: none;
-      }
-      
+    
 
 @media (max-width: 1800px) {
    
@@ -294,12 +289,13 @@ top: -41px;
         left: 0;
         /* right: 0; */
        
-        width: 200px;
+        width: 220px;
         /* max-height: 100%; */
         height: auto;
         background-color: #fff;
         top: 0;
         bottom: 0;
+        text-align: start;
     }
      .increase-size{
         width: 550px;
@@ -308,6 +304,11 @@ top: -41px;
     .header_top .input-group {
         display: none;
     }
+    .header_top .navbar{
+        flex-wrap: nowrap;
+    }
+   
+   
 }
 
 @media only screen and (max-width: 1210px){
@@ -316,7 +317,7 @@ top: -41px;
 }
 .main_menu nav > ul > li > a {
     display: block;
-    padding: 22px 12px;
+    padding: 22px 23px 22px 5px;
     color: #565656;
     font-size: 13px;
     text-transform: capitalize;
