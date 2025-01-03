@@ -10,9 +10,7 @@
         color: black;
         display: none;
       }
-      .right-nav {
-        margin-right: 0px;
-    }
+      
 }
 @media (max-width: 1800px) {
    
@@ -193,6 +191,8 @@ top: -41px;
     left: 0;
     right: 0;
     width: 200px;
+    /* max-height: 100%; */
+    height: auto;
     background-color: #fff;
 }
 .main_menu nav ul li ul.mega_menu {
@@ -213,9 +213,9 @@ top: -41px;
     bottom: 1
     
     50px;
-    margin-left: 187px;
+    /* margin-left: 187px; */
     position: absolute;
-    /* top: 140%; */
+    top: 140%;
     display: flex;
 }
 .header_static .navbar-toggler{
