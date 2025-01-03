@@ -21,7 +21,7 @@
 <body>
 
     <header>
-      <div class="container">
+      <div class="container header_top">
         <nav class="navbar navbar-expand-lg navbar-light bg-white ">
             <a class="navbar-brand d-flex" href="#">
                 <img src="./assets/Moglix.png" alt="Moglix" height="30">
@@ -29,7 +29,7 @@
            
     
             <div class="navbar-collapse" id="">
-                    <div class="input-group  ">
+                    <div class="input-group   ">
                         <select class="products">
                             <option selected>Products</option>
                         </select>
@@ -39,7 +39,7 @@
                             </button>
                             <button class="btn btn-warning" type="button"> <i class="fa-solid fa-magnifying-glass mr-2"></i>Search</button>
                     </div>
-                <ul class="navbar-nav  ml-4 mt-2 mt-lg-0">
+                <ul class="navbar-nav  ">
                     <li class="nav-item">
                         <span class="nav-link">Deliver to: 
                             <img src="./assets/indian-flag-3096740_1280.png" alt="India Flag" height="15"><b>IN</b> 
@@ -66,24 +66,43 @@
                          
                           <div class="main_menu_inner ">
                               <div class="main_menu ">
+                                <div class="input-group d-lg-none ">
+                                  <select class="products">
+                                      <option selected>Products</option>
+                                  </select>
+                                  <input type="text" class="form-control" placeholder="decorative crystal balls">
+                                      <button class="btn  camera" type="button">
+                                          <i class="fas fa-camera"></i>
+                                      </button>
+                                      <button class="btn btn-warning" type="button"> <i class="fa-solid fa-magnifying-glass mr-2"></i>Search</button>
+                              </div>
 
                                 
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Togglenavigation">
                                   <span class="navbar-toggler-icon"></span>
                               </button>
-
+                            
                                
                                
-                                  <nav >
+                                  <nav class="collapse " id="navbarContent">
+                                    <div class="d-flex">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Togglenavigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                  </button>
+                                  <a class="navbar-brand d-lg-none " href="#">
+                                    <img src="./assets/Moglix.png" alt="Moglix" height="30">
+                                </a>
+                              </div>
+    
                                     
-                                      <ul class="collapse" id="navbarContent" >
+                                      <ul class="collapse" id="navbarContent"  >
                                           <li class="active">
                                               <a  href="javascript:void(0);">ALL Category </a>
                                              
                                               <ul class="mega_menu   ">
                                                   <div class="brand-category-content  shop-category-contain">
                                                       <div  class="shop-menu container-fluid">
-                                                          <ul  class="shop-category " >
+                                                          <ul  class="shop-category  " >
                                                               <li  class="active">
                                                                   <a href="javascript:void(0);">Top Categories</a>
                                                                   <div  class="shop-mega-menu hover " >
@@ -107,7 +126,7 @@
                                                                         </li>
                                                                         <li>
                                                                           <div class="row">
-                                                                            <div class="col-2 d-flex">
+                                                                            <div class="col-md-2  d-flex">
                                                                               <img src="https://s.alicdn.com/@sc04/kf/A31e62ce87c3647bda878afbf67cae8aea.jpg_120x120.jpg" width="100%" alt="Image 1" >
                                                                               <img src="https://s.alicdn.com/@sc04/kf/H3fe92f3e5022481a88a6d2f1df3d74b0f.jpg_120x120.jpg" alt="Image 2" >
                                                                               <img src="https://s.alicdn.com/@sc04/kf/A31e62ce87c3647bda878afbf67cae8aea.jpg_120x120.jpg" alt="Image 1" >
@@ -120,7 +139,7 @@
                                                                         </li>
                                                                         <li>
                                                                           <div class="row">
-                                                                            <div class="col-2 d-flex">
+                                                                            <div class="col-md-2 d-flex">
                                                                               <img src="https://s.alicdn.com/@sc04/kf/A31e62ce87c3647bda878afbf67cae8aea.jpg_120x120.jpg" alt="Image 1" >
                                                                               <img src="https://s.alicdn.com/@sc04/kf/H3fe92f3e5022481a88a6d2f1df3d74b0f.jpg_120x120.jpg" alt="Image 2" >
                                                                               <img src="https://s.alicdn.com/@sc04/kf/A31e62ce87c3647bda878afbf67cae8aea.jpg_120x120.jpg" alt="Image 1" >
@@ -1026,8 +1045,8 @@
                                               <ul class="mega_menu sub_menu" style="line-height: 50px; ">
                                                 <div class="conatiner py-4">
                                                   <div class="row">
-                                                    <div class="col-md-3">
-                                                      <div class="card">
+                                                    <div class="col-md-12 col-lg-2">
+                                                      <div class="card  increase-size">
                                                         <div class="card-body">
                                                           <div class=" card-img ">
                                                            
@@ -1044,8 +1063,8 @@
                                                        
 
                                                     </div>
-                                                    <div class="col-md-3">
-                                                      <div class="card">
+                                                    <div class="col-md-12 col-lg-2">
+                                                      <div class="card increase-size">
                                                         <div class="card-body">
                                                           <div class="card-img ">
                                                            
@@ -1061,8 +1080,8 @@
                                                        
 
                                                     </div>
-                                                    <div class="col-md-3">
-                                                      <div class="card">
+                                                    <div class="col-md-12 col-lg-2">
+                                                      <div class="card increase-size">
                                                         <div class="card-body">
                                                           <div class="card-img ">
                                                            
@@ -1078,8 +1097,8 @@
                                                        
 
                                                     </div>
-                                                    <div class="col-md-3">
-                                                      <div class="last-li" >
+                                                    <div class="col-md-12 col-lg-2">
+                                                      <div class="last-li increase-size" >
                                                         <ul>
                                                           <li>Sample Center </li>
                                                           <li>Online Trade Show</li>
@@ -1181,14 +1200,14 @@
                                             <ul class="mega_menu sub_menu">
                                               <div class="container my-5">
                                                 <div class="row">
-                                                    <div class="col-md-6 trade-assurance ">
+                                                    <div class="col-md-12 col-lg-6 trade-assurance ">
                                                       <img class="py-4" src="https://i.ibb.co/6YZDPmC/image-7.png" alt="">
                                                         <h1>Enjoy protection from payment to delivery.</h1>
                                                         <button class="btn btn-learn-more">Learn more</button>
                                                     </div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-12 col-lg-6">
                                                         <div class="row">
-                                                            <div class="col-md-6 mb-3">
+                                                            <div class="col-md-12 col-lg-6mb-3">
                                                                 <div class="info-card">
                                                                     <div class="info-icon d-flex text-align-center">
                                                                         <img src="https://i.ibb.co/qY1jHvf/image-3-1.png" alt="Safe Payments" >
@@ -1199,7 +1218,7 @@
                                                                    
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-6 mb-3">
+                                                            <div class="col-md-12 col-lg-6 mb-3">
                                                               <div class="info-card">
                                                                 <div class="info-icon d-flex text-align-center">
                                                                     <img src="https://i.ibb.co/qY1jHvf/image-3-1.png" alt="Safe Payments" >
@@ -1210,7 +1229,7 @@
                                                                
                                                             </div>
                                                             </div>
-                                                            <div class="col-md-6">
+                                                            <div class="col-md-12 col-lg-6">
                                                               <div class="info-card">
                                                                 <div class="info-icon d-flex text-align-center">
                                                                     <img src="https://i.ibb.co/qY1jHvf/image-3-1.png" alt="Safe Payments" >
@@ -1221,7 +1240,7 @@
                                                                
                                                             </div>
                                                           </div>
-                                                            <div class="col-md-6">
+                                                            <div class="col-md-12 col-lg-6">
                                                               <div class="info-card">
                                                                 <div class="info-icon d-flex text-align-center">
                                                                     <img src="https://i.ibb.co/qY1jHvf/image-3-1.png" alt="Safe Payments" >
@@ -1367,11 +1386,11 @@
                                                     <p>Find products, communicate with suppliers, and manage and pay for your orders with the Alibaba.com app anytime, anywhere.</p>
                                                     
                                                   </div>
-                                                  <div class="col-md-2">
+                                                  <div class="col-md-12 col-lg-2">
                                                     <img src="https://i.ibb.co/SQNwVBG/png-clipart-app-store-google-play-apple-apple-text-logo.png"  width="200px" alt="">
 
                                                   </div>
-                                                  <div class="col-md-4 text-center">
+                                                  <div class="col-md-12 col-lg-4 text-center">
                                                     <img src="https://i.ibb.co/h9MnSmD/download.png" alt="QR Code" class="qr-code">
                                                   </div>
                                                 </div>
