@@ -279,8 +279,16 @@ top: -41px;
     overflow-y: scroll;
     height: 100vh;
     overflow: hidden;
+    width: auto;
 }
 
+}
+@media only screen and (max-width: 991px) {
+.sub_menu .card {
+    /* margin: 0px 10px; */
+    width: 150px;
+    margin: 20px;
+}
 }
 @media only screen and (max-width: 991px) {
     .header_static nav {
@@ -302,6 +310,17 @@ top: -41px;
         width: 550px;
         
     }
+    .shop-mega-menu > ul {
+ 
+        /* padding: 15px; */
+        float: left;
+        max-height: 100%;
+        overflow: initial;
+        width: 450px;
+        margin-left: 0px;
+      
+      
+      }
     .header_top .input-group {
         display: none;
     }
