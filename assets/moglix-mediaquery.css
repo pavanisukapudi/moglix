@@ -352,7 +352,7 @@ top: -41px;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         position: absolute;
-        max-width: calc(100vw - 255px);
+        max-width: calc(100vw - 468px);
         top: 0px;
         right: 0;
         display: none;
