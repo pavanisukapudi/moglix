@@ -230,7 +230,7 @@ top: -41px;
 }
 .main_menu nav ul li ul.mega_menu {
     /* position: absolute; */
-    width: 1000px;
+    width: 100%;
     height: 750px;
     padding: 0;
     background: #ffffff;
@@ -249,7 +249,7 @@ top: -41px;
     /* margin-left: 187px; */
     position: absolute;
     top: 140%;
-    display: flex;
+    /* display: flex; */
 }
 .header_static .navbar-toggler{
     display: block;
@@ -278,6 +278,7 @@ top: -41px;
     position: fixed;
     overflow-y: scroll;
     height: 100vh;
+    overflow: hidden;
 }
 
 }
@@ -307,6 +308,38 @@ top: -41px;
     .header_top .navbar{
         flex-wrap: nowrap;
     }
+    .main_menu_inner .main_menu {
+        display: flex;
+    
+        align-items: center;
+    }
+    .main_menu nav > ul > li {
+        display: block;
+      }
+      /* #navbarContent {
+        display: none;
+      } */
+      .shop-mega-menu  {
+        background-color: #fff;
+        padding: 0px;
+        width: 100%;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        z-index: 9;
+        /* max-height: 393px; */
+        overflow-x: hidden;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        position: absolute;
+        max-width: calc(100vw - 255px);
+        top: 0px;
+        right: 0;
+        display: none;
+        /* width: 100%; */
+      }
+      
    
    
 }

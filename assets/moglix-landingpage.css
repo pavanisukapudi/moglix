@@ -16,8 +16,8 @@ body{
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: .25rem;
-  background-color: #ddd;
-  margin: 10px;
+  /* background-color: #ddd; */
+  margin: auto;
 }
 
 
@@ -32,6 +32,8 @@ body{
 .nav-link img {
     margin-left: 5px;
 }
+
+
 
 .input-group .btn-warning {
     color: white;
@@ -327,6 +329,8 @@ li {
   right: 0;
   display: none;
 }
+
+
 .shop-mega-menu li {
   list-style: none;
   line-height: 55px;
@@ -334,7 +338,7 @@ li {
 .shop-menu > ul {
   max-height: 600px;
   overflow-x: hidden;
-  width: 440px;
+  width: 260px;
   padding: 10px;
   text-align: start;
 }
