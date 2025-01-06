@@ -29,7 +29,7 @@
 }
 @media only screen and (max-width: 968px) {
     .navbar-brand{
-        padding-left: 20px;
+        /* padding-left: 20px; */
     }
     .input-group .crystall{
         width: 180px;
@@ -309,6 +309,12 @@ top: -41px;
     }
    
    
+}
+i.fa-regular.fa-circle-xmark {
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+    color: red;
 }
 
 @media only screen and (max-width: 1210px){
