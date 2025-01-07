@@ -151,19 +151,38 @@ li {
   letter-spacing: 0.3px;
   position: relative;
 }
-li.icon-heading a:hover {
+
+.main_menu nav > ul >   li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 0;
+  background-color: #5161ce;
+  opacity: 0;
+  /* visibility: hidden; */
+  transition: 0.5s;
+  
+}
+.icon-heading:hover  {
   background-color: #bdb4b4;
-  margin: 0;
-  color: #000000;
   text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+  margin: 0px 5px;
+
+  /* line-height: 52px; */
 }
 
 
-.main_menu nav > ul > li > a:hover:before, .main_menu nav > ul > li:hover > a:before {
-    color: #5161ce;
+
+
+/* .main_menu nav > ul > li > a:hover:before, .main_menu nav > ul > li:hover > a:before {
+   color: #5161ce;
     opacity: 1;
     visibility: visible;
-}
+} */
 .right-nav{
   margin-right: 200px;
 }
