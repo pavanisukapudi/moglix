@@ -291,6 +291,20 @@ top: -41px;
 }
 }
 @media only screen and (max-width: 991px) {
+
+    .images-part {
+        -webkit-column-count: 2; /* Creates 2 columns for Webkit browsers */
+        -moz-column-count: 2; /* Creates 2 columns for Firefox */
+        column-count: 2; /* Creates 2 columns for modern browsers */
+       
+    }
+    .shop-mega-menu.hover {
+        overflow-y: scroll;
+        height: 900px;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        padding: 10px;
+    }
     .header_static nav {
         position: fixed;
         flex-direction: column;
@@ -395,10 +409,10 @@ i.fa-regular.fa-circle-xmark {
     }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 2000px) {
+@media only screen and (min-width: 992px) and (max-width: 2000px) {
     .main_menu nav > ul > li > a {
         display: block;
-        padding: 12px 12px;
+        padding: 12px 6px;
         color: #565656;
         font-size: 13px;
         text-transform: capitalize;
@@ -407,5 +421,22 @@ i.fa-regular.fa-circle-xmark {
         transition: 0.5s;
         letter-spacing: 0.3px;
         position: relative;
+        margin: 0px 5px;
     }
+}
+
+
+@media only screen and (max-width: 1200px) {
+a.navbar-brand.d-flex {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+}
+@media only screen and (max-width: 909px) {
+.images-part {
+    -webkit-column-count: 1; /* Creates 2 columns for Webkit browsers */
+    -moz-column-count: 1; /* Creates 2 columns for Firefox */
+    column-count: 1; /* Creates 2 columns for modern browsers */
+   
+}
 }
