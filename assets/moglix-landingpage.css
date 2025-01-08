@@ -244,6 +244,7 @@ a.navbar-brand.d-flex {
   background-color: #ff6a00;
   color: #fff;
   border: none;
+  margin-bottom: 20px;
 }
 .btn-learn-more:hover {
   background-color: #e65c00;
@@ -302,6 +303,7 @@ a.navbar-brand.d-flex {
   opacity: 1;
   visibility: visible;
   top: 100%;
+  padding-top: 25px;
 
 }
 .sub_menu li a {
@@ -476,6 +478,33 @@ a.navbar-brand.d-flex {
     width: 410px;
 }
  /* section2 */
+.section2 .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #4f3125;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+
+}
+.section2 .card-title{
+  margin: 20px 0;
+}
+.section2 .icon img{
+  text-align: center;
+  align-items: center;
+}
+  
+
+.section2  .card1:hover img{
+  filter: brightness(0) saturate(100%) invert(41%) sepia(39%) saturate(2966%) hue-rotate(356deg) brightness(101%) contrast(94%);
+}
+ 
+.card1:hover{
+  background-color: #ff66001f;
+}
+
  .section2{
   background-color: #3a190b;
       color: white;    
@@ -486,12 +515,23 @@ a.navbar-brand.d-flex {
     border-radius: 15px;
     font-size: 14px;
     line-height: 25px;
-    padding: 30px;
+    padding: 50px 30px;
    
  }
+ .card  :hover .card1{
+  background-color: #682909;
+}
+
+/* input button */
+button.btn.camera:hover {
+  filter: brightness(0) saturate(100%) invert(41%) sepia(39%) saturate(2966%) hue-rotate(356deg) brightness(101%) contrast(94%);
+}
+
+
+ 
  /* section3 */
  .main-text {
-    font-size: 2rem;
+    font-size: 2.5rem;
     /* font-weight: bold; */
     font-weight: 600;
   }
@@ -531,6 +571,11 @@ a.navbar-brand.d-flex {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 40px;
     margin-bottom: 20px;
+}
+.icon-box:hover{
+  border: 2px solid #f86110;
+
+
 }
 
 
@@ -1393,5 +1438,8 @@ a.navbar-brand.d-flex {
 
        /* display: flex; */ /* flex-wrap: wrap; */
 
+}
+.shop-mega-menu p {
+  padding-left: 94px;
 }
 
