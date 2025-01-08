@@ -36,7 +36,7 @@
                         </select>
                         <input type="text" class="form-control" placeholder="decorative crystal balls">
                             <button class="btn  camera" type="button">
-                                  <i class="fas fa-camera"></i>
+                                <i class="fas fa-camera"></i>
                             </button>
                             <button class="btn btn-warning" type="button"> <i class="fa-solid fa-magnifying-glass mr-2"></i>Search</button>
                     </div>
@@ -1973,73 +1973,97 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel cupiditate consect
   });
   
   document.querySelectorAll('.icon-list-item').forEach(function(item) {
-          item.addEventListener('click', function() {
-              // Toggle the visibility of description
-              const desc = item.querySelector('.icon-desc');
-              const allDesc = document.querySelectorAll('.icon-desc');
-              
-              // Hide all descriptions first
-              allDesc.forEach(function(d) {
-                  d.style.display = 'none';
-              });
-              
-              // Show the clicked description
-              desc.style.display = 'block';
-  
-              // Change the image
-              var newImage = item.getAttribute('data-image');
-              document.getElementById('dynamic-image').src = newImage;
-              
-              // Toggle active class for icon
-              document.querySelectorAll('.icon-list-item').forEach(function(listItem) {
-                  listItem.classList.remove('active');
-              });
-              item.classList.add('active');
-          });
-      });
-      document.addEventListener("DOMContentLoaded", () => {
+    item.addEventListener('click', function() {
+        // Toggle the visibility of description
+        const desc = item.querySelector('.icon-desc');
+        const allDesc = document.querySelectorAll('.icon-desc');
+
+        // Hide all descriptions first
+        allDesc.forEach(function(d) {
+            d.style.display = 'none';
+        });
+
+        // Show the clicked description
+        desc.style.display = 'block';
+
+        // Change the image
+        var newImage = item.getAttribute('data-image');
+        document.getElementById('dynamic-image').src = newImage;
+
+        // Toggle active class for icon
+        document.querySelectorAll('.icon-list-item').forEach(function(listItem) {
+            listItem.classList.remove('active');
+        });
+        item.classList.add('active');
+    });
+
+    // Add hover functionality
+    item.addEventListener('mouseover', function() {
+        // Change the image on hover
+        var hoverImage = item.getAttribute('data-image');
+        document.getElementById('dynamic-image').src = hoverImage;
+
+        // Update active class
+        document.querySelectorAll('.icon-list-item').forEach(function(listItem) {
+            listItem.classList.remove('active');
+        });
+        item.classList.add('active');
+
+        // Show description on hover
+        const desc = item.querySelector('.icon-desc');
+        const allDesc = document.querySelectorAll('.icon-desc');
+        allDesc.forEach(function(d) {
+            d.style.display = 'none';
+        });
+        desc.style.display = 'block';
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
     const items = document.querySelectorAll(".icon-list-item");
     const dynamicImage = document.getElementById("dynamic-image");
     let currentIndex = 0;
 
     function updateContent() {
-      // Remove active class from all items
-      items.forEach((item) => item.classList.remove("active"));
+        // Remove active class from all items
+        items.forEach((item) => item.classList.remove("active"));
 
-      // Set active class to current item
-      const currentItem = items[currentIndex];
-      currentItem.classList.add("active");
+        // Set active class to current item
+        const currentItem = items[currentIndex];
+        currentItem.classList.add("active");
 
-      // Update image
-      const newImage = currentItem.getAttribute("data-image");
-      dynamicImage.src = newImage;
+        // Update image
+        const newImage = currentItem.getAttribute("data-image");
+        dynamicImage.src = newImage;
 
-      // Update index
-      currentIndex = (currentIndex + 1) % items.length;
+        // Update index
+        currentIndex = (currentIndex + 1) % items.length;
     }
 
     // Change content every 4 seconds
-    setInterval(updateContent, 4000);
-  });
-      $(document).ready(function () {
-      $(".owl-carousel").owlCarousel({
+    // setInterval(updateContent, 4000);
+});
+
+$(document).ready(function() {
+    $(".owl-carousel").owlCarousel({
         loop: true,
         margin: 10,
         nav: true,
         dots: true,
         responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 2
-          },
-          1000: {
-            items: 3
-          }
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
         }
-      });
     });
+});
+
 
     $(".main_menu>nav>ul>li").hover(function () {
                 var mega_Menu_Height = $(".shop-category>li").find(".shop-mega-menu").height();
