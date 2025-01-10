@@ -981,7 +981,8 @@ button.btn.camera:hover {
 }
 .section5 .card a {
   position: absolute;
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  text-decoration: none;
  
   z-index: 2;
   padding: 20px;
@@ -990,10 +991,11 @@ button.btn.camera:hover {
   color: white;
   transition: 0.3s;
 }
-.section5 .card a :hover{
- background-color: black;
+.section5 .card a:hover {
   text-decoration: underline;
+  color: #ddd;
 }
+
 .section-6{
   background-image: url(./section-6.jpg);
   background-size: cover;
