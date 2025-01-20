@@ -263,9 +263,7 @@ top: -41px;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    margin: 20px 0px
-    
-    ;
+    margin: 20px 0px 1 0;
   }
   .main_menu nav ul li:hover .sub_menu, .main_menu nav ul li:hover .mega_menu {
     bottom: 0;
@@ -464,3 +462,5 @@ a.navbar-brand.d-flex {
         margin-right: 320px;
     }
 }
+
+

@@ -16,7 +16,6 @@
 <script src="myscripts.js"></script>
       <link rel="stylesheet" href="./assets/moglix-landingpage.css">
       <link rel="stylesheet" href="./assets/moglix-mediaquery.css">
-      <script src="./moglix-lading.js"></script>
 
 </head>
 <body>
@@ -66,13 +65,13 @@
         </nav></div>
       </div>
         <div class="header_bottom sticky-header">
-          <div class="container">
+          <div  class="container">
              
                  
-                      <div class="header_static ">
+                      <div  class="header_static ">
                          
-                          <div class="main_menu_inner ">
-                              <div class="main_menu  ">
+                          <div  class="main_menu_inner ">
+                              <div class="main_menu   ">
                                  
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Togglenavigation">
                                   <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
@@ -1497,6 +1496,7 @@
         <h4>Trade with confidence from production quality to purchase protection</h4>
 
       </div>
+      
 
     </div>
     <div class="row">
@@ -1509,33 +1509,34 @@
             and capabilities. Look for the “Verified” logo to begin sourcing with experienced
             suppliers your business could rely on.
           </p>
-         
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Open Video</button>
-
-
-<!-- Video Modal -->
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="videoModalLabel">Video</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <video id="videoPlayer" class="w-100" controls>
-          <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-          <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-  </div>
-</div>
-
+          
+          <div class="d-flex">
+            <button class="btn btn-custom mr-3" data-toggle="modal" data-target="#videoModal"> <img src="https://s.alicdn.com/@img/imgextra/i2/O1CN01AADr2P1QOTWNJ2okk_!!6000000001966-2-tps-72-72.png" alt="">Watch video</button>
+            <a href="#" class="btn-custom1">Learn more</a>
+            
+          </div>
+          
+          
         </div>
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel">Video</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
 
+                <iframe id="videoPlayer" controls autoplay  loop class="w-100" height="345" 
+                src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1&loop=1&playlist=tgbNymZ7vqY">
+              </iframe>
+              
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="col-md-12 col-lg-6 mb-3">
         <div class="content-card text-left">
@@ -1547,8 +1548,30 @@
             when you order and pay on tradeind.com.
           </p>
           <div class="d-flex">
-            <button class="btn btn-custom mr-3"> <img src="https://s.alicdn.com/@img/imgextra/i2/O1CN01AADr2P1QOTWNJ2okk_!!6000000001966-2-tps-72-72.png" alt="">Watch video</button>
+            <button class="btn btn-custom mr-3" data-toggle="modal" data-target="#videoModals"> <img src="https://s.alicdn.com/@img/imgextra/i2/O1CN01AADr2P1QOTWNJ2okk_!!6000000001966-2-tps-72-72.png" alt="">Watch video</button>
             <a href="#" class="btn-custom1">Learn more</a>
+            
+          </div>
+          
+        </div>
+        <div class="modal fade" id="videoModals" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div  class="modal-content  " >
+              <div class="modal-header  "  >
+                <h5 class="modal-title" id="videoModalLabel">Video</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body ">
+
+                <video  id="videoPlayers" class="w-100" controls muted autoplay loop>
+                  <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                  <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -1557,6 +1580,7 @@
     </div>
 
   </div>
+  
 
 </section>
 
@@ -2159,6 +2183,60 @@ $(document).ready(function() {
         }
       });
     });
+
+    // Get the video element
+const videoPlayer = document.getElementById('videoPlayers');
+
+// When the modal is shown, play the video
+$('#videoModals').on('shown.bs.modal', function () {
+  videoPlayer.muted = true; // Ensure it's muted for autoplay compliance
+  videoPlayer.play().catch((error) => {
+    console.error('Autoplay failed:', error);
+  });
+});
+
+// When the modal is hidden, pause and reset the video
+$('#videoModals').on('hidden.bs.modal', function () {
+  videoPlayer.pause();
+  videoPlayer.currentTime = 0; // Reset video to the start
+});
+
+// Allow the close button to close the modal
+$('#videoModals .close').on('click', function () {
+  console.log('Modal is closing!');
+});
+
+// Prevent modal from closing when clicking outside or pressing escape
+$('#videoModals').modal({
+  backdrop: 'static', // Prevent closing when clicking outside the modal
+  keyboard: false     // Prevent closing via the Escape key
+});
+
+
+$('#videoModals').on('shown.bs.modal', function () {
+  videoPlayer.muted = true; // Ensure it's muted for autoplay compliance
+  videoPlayer.play().catch((error) => {
+    console.error('Autoplay failed:', error);
+  });
+});
+
+// When the modal is hidden, pause and reset the video
+$('#videoModals').on('hidden.bs.modal', function () {
+  videoPlayer.pause();
+  videoPlayer.currentTime = 0; // Reset video to the start
+});
+
+// Allow the close button to close the modal
+$('#videoModals .close').on('click', function () {
+  console.log('Modal is closing!');
+});
+
+// Prevent modal from closing when clicking outside or pressing escape
+$('#videoModals').modal({
+  backdrop: 'static', // Prevent closing when clicking outside the modal
+  keyboard: false     // Prevent closing via the Escape key
+});
+
 
            
   </script>
