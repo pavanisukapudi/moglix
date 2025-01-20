@@ -16,6 +16,7 @@
 <script src="myscripts.js"></script>
       <link rel="stylesheet" href="./assets/moglix-landingpage.css">
       <link rel="stylesheet" href="./assets/moglix-mediaquery.css">
+      <script src="./moglix-lading.js"></script>
 
 </head>
 <body>
@@ -1508,10 +1509,31 @@
             and capabilities. Look for the “Verified” logo to begin sourcing with experienced
             suppliers your business could rely on.
           </p>
-          <div class="d-flex">
-            <button class="btn btn-custom mr-3"> <img src="https://s.alicdn.com/@img/imgextra/i2/O1CN01AADr2P1QOTWNJ2okk_!!6000000001966-2-tps-72-72.png" alt="">Watch video</button>
-            <a href="#" class="btn-custom1">Learn more</a>
-          </div>
+         
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoModal">Open Video</button>
+
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoModalLabel">Video</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <video id="videoPlayer" class="w-100" controls>
+          <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
 
       </div>
@@ -1898,13 +1920,21 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel cupiditate consect
     </div>
 </div>
 </section>
+
+
       <!-- jQuery and Bootstrap Bundle (includes Popper.js) -->
+
+
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script>
+
+
+
+
   $(document).ready(function () {
     // Initialize the first carousel
     $(".first-carousel").owlCarousel({
