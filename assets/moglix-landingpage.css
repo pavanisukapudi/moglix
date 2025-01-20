@@ -1449,4 +1449,15 @@ button.btn.camera:hover {
 
 
 
+.modal-body .close .fa-regular {
+ position: relative;
+ top: 28px;
+ left: -5px;
+
+}
+.modal-body .close .fa-regular {
+  color: black;
+}
+
+
 
