@@ -1459,5 +1459,22 @@ button.btn.camera:hover {
   color: black;
 }
 
+.modal-body {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0;
+  margin: -7px;
+
+}
+.modal-header .close {
+  padding: 0;
+  margin: -1rem -1rem -1rem auto;
+  z-index: 999;
+  position: relative;
+  top: 15px;
+  border: 0;
+}
+
 
 

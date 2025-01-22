@@ -1518,24 +1518,25 @@
           
           
         </div>
-        <div   class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-          <div  class="modal-dialog modal-dialog-centered" role="document">
-            
-             
-              <div class="modal-body " >
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content py-0">
+              <div class="modal-header py-0">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true"><i class="fa-regular fa-circle-xmark"></i></span>
+                  <span aria-hidden="true">&times;</span>
                 </button>
-
-                <video   id="videoPlayers" class="w-100" controls muted autoplay loop>
+              </div>
+              <div class="modal-body py-0">
+                <video id="videoPlayer" class="w-100 py-0" controls autoplay >
                   <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                   <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
                   Your browser does not support the video tag.
                 </video>
               </div>
-            
+            </div>
           </div>
         </div>
+       
       </div>
       <div class="col-md-12 col-lg-6 mb-3">
         <div class="content-card text-left">  
@@ -1547,30 +1548,32 @@
             when you order and pay on tradeind.com.
           </p>
           <div class="d-flex">
-            <button class="btn btn-custom mr-3" data-toggle="modal" data-target="#videoModals"> <img src="https://s.alicdn.com/@img/imgextra/i2/O1CN01AADr2P1QOTWNJ2okk_!!6000000001966-2-tps-72-72.png" alt="">Watch video</button>
+            <button type="button" class="btn btn-custom mr-3" data-toggle="modal" data-target="#videoModal"> <img src="https://s.alicdn.com/@img/imgextra/i2/O1CN01AADr2P1QOTWNJ2okk_!!6000000001966-2-tps-72-72.png" alt=""> Watch video</button>
             <a href="#" class="btn-custom1">Learn more</a>
             
           </div>
           
         </div>
-        <div class="modal fade" id="videoModals" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered"  role="document">
-            
-             
-              <div class="modal-body ">
-                <button type="button" class="close  " data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true"><i class="fa-regular fa-circle-xmark"></i></span>
-                </button>
 
-                <video   id="videoPlayers" class="w-100" controls muted autoplay loop>
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content py-0">
+              <div class="modal-header py-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body py-0">
+                <video id="videoPlayer" class="w-100 py-0"  controls autoplay >
                   <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                   <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
                   Your browser does not support the video tag.
                 </video>
               </div>
-            
+            </div>
           </div>
         </div>
+       
 
       </div>
 
@@ -1942,6 +1945,28 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel cupiditate consect
 </div>
 </section>
 
+<div   class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div  class="modal-dialog modal-dialog-centered" role="document">
+    
+     
+      <div class="modal-body  py-0" >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fa-regular fa-circle-xmark"></i></span>
+        </button>
+
+        <video   id="videoPlayers" class="w-100" controls autoplay loop>
+          <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    
+  </div>
+</div>
+
+
+<!-- modal -->
+
 
       <!-- jQuery and Bootstrap Bundle (includes Popper.js) -->
 
@@ -2182,61 +2207,26 @@ $(document).ready(function() {
     });
 
     // Get the video element
-const videoPlayer = document.getElementById('videoPlayers');
+ // Get the video element
+ const videoPlayer = document.getElementById('videoPlayer');
 
 // When the modal is shown, play the video
-$('#videoModals').on('shown.bs.modal', function () {
-  videoPlayer.muted = true; // Ensure it's muted for autoplay compliance
-  videoPlayer.play().catch((error) => {
-    console.error('Autoplay failed:', error);
-  });
+$('#videoModal').on('shown.bs.modal', function () {
+  videoPlayer.play();
 });
 
 // When the modal is hidden, pause and reset the video
-$('#videoModals').on('hidden.bs.modal', function () {
+$('#videoModal').on('hidden.bs.modal', function () {
   videoPlayer.pause();
   videoPlayer.currentTime = 0; // Reset video to the start
 });
 
-// Allow the close button to close the modal
-$('#videoModals .close').on('click', function () {
-  console.log('Modal is closing!');
-});
 
-// Prevent modal from closing when clicking outside or pressing escape
-$('#videoModals').modal({
-  backdrop: 'static', // Prevent closing when clicking outside the modal
-  keyboard: false     // Prevent closing via the Escape key
-});
-
-
-$('#videoModals').on('shown.bs.modal', function () {
-  videoPlayer.muted = true; // Ensure it's muted for autoplay compliance
-  videoPlayer.play().catch((error) => {
-    console.error('Autoplay failed:', error);
-  });
-});
-
-// When the modal is hidden, pause and reset the video
-$('#videoModals').on('hidden.bs.modal', function () {
-  videoPlayer.pause();
-  videoPlayer.currentTime = 0; // Reset video to the start
-});
-
-// Allow the close button to close the modal
-$('#videoModals .close').on('click', function () {
-  console.log('Modal is closing!');
-});
-
-// Prevent modal from closing when clicking outside or pressing escape
-$('#videoModals').modal({
-  backdrop: 'static', // Prevent closing when clicking outside the modal
-  keyboard: false     // Prevent closing via the Escape key
-});
 
 
            
   </script>
+  
 
 
     
