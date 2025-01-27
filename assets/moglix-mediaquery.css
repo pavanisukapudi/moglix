@@ -112,7 +112,7 @@
        } */
        .section3 .owl-carousel .owl-nav button.owl-next {
         position: relative;
-        left: -4px;
+        left: 23px;
         top: -41px;
     }
     .section3 .owl-carousel .owl-nav button {
@@ -463,4 +463,31 @@ a.navbar-brand.d-flex {
     }
 }
 
+
+
+
+
+    
+
+
+@media (max-width: 992px) {
+    #sticky-header-container{
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 591px) {
+    a.navbar-brand.d-flex {
+        margin-right: -78px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .section3 .owl-carousel .owl-nav button {
+        position: relative;
+        left: -18px;
+        top: -41px;
+    }
+}
 
